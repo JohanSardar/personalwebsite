@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { socials } from "@/lib/socials";
@@ -19,6 +20,8 @@ export default function Sidebar() {
         <span>Johan</span>
         <span>Sardar</span>
       </Link>
+
+      <Image className="portrait" src="/portrait.jpg" alt="Johan Sardar" width={220} height={220} priority />
 
       <nav className="nav" aria-label="Pages">
         {nav.map((item, i) => (

@@ -98,8 +98,8 @@ ol {
   -webkit-backdrop-filter: blur(48px);
   backdrop-filter: blur(48px);
   border-left: 1px solid var(--line);
-  margin-left: 300px;
-  box-shadow: -300px 0 0 0 var(--panel);
+  margin-left: 240px;
+  box-shadow: -240px 0 0 0 var(--panel);
   transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -159,7 +159,7 @@ ol {
 
 .shell {
   display: grid;
-  grid-template-columns: 300px minmax(0, 1fr);
+  grid-template-columns: 240px minmax(0, 1fr);
   min-height: 100dvh;
 }
 
@@ -168,17 +168,18 @@ ol {
 .sidebar {
   display: flex;
   flex-direction: column;
-  gap: 56px;
+  gap: 40px;
   align-self: start;
   height: 100dvh;
-  padding: 44px 36px 36px;
+  min-height: 660px;
+  padding: 40px 28px 32px;
 }
 
 .wordmark {
   display: grid;
   font-stretch: 125%;
   font-weight: 800;
-  font-size: 30px;
+  font-size: 28px;
   line-height: 0.98;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -324,8 +325,8 @@ ol {
 }
 
 .page {
-  max-width: 940px;
-  padding: 72px clamp(28px, 6vw, 88px) 96px;
+  max-width: 1040px;
+  padding: 40px clamp(28px, 5vw, 72px) 80px;
 }
 
 .reveal {
@@ -342,11 +343,12 @@ ol {
 
 .portrait {
   display: block;
-  width: 148px;
-  height: 148px;
-  border-radius: 22px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  margin-top: -16px;
+  border-radius: 14px;
   object-fit: cover;
-  margin-bottom: 44px;
 }
 
 .statements {
@@ -379,7 +381,7 @@ ol {
 }
 
 .section {
-  margin-top: 88px;
+  margin-top: 64px;
 }
 
 .section-head {
@@ -390,85 +392,93 @@ ol {
   margin-bottom: 18px;
 }
 
-/* ---------- Project pills ---------- */
+/* ---------- Project cards: tall rectangles, side by side ---------- */
 
-.pills {
+.cards {
   display: grid;
-  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
 }
 
-.pill {
+.card {
   position: relative;
   display: block;
-  height: 104px;
+  aspect-ratio: 5 / 8;
   border: 1px solid var(--line);
   border-radius: 14px;
   color: var(--ink);
   cursor: pointer;
 }
 
-.pill[data-placeholder] {
+.card[data-placeholder] {
   cursor: default;
 }
 
-.pill-layer {
-  display: grid;
-  grid-template-columns: 34px minmax(0, 1fr) auto auto 20px;
-  align-items: center;
-  column-gap: 20px;
+.card-layer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 100%;
-  padding: 0 30px 0 28px;
+  padding: 22px;
   border-radius: inherit;
 }
 
-/* The inverted copy sits on top and is wiped in from the left. */
-.pill-fill {
+/* The inverted copy sits on top and is wiped in from the bottom. */
+.card-fill {
   position: absolute;
   inset: -1px;
   height: auto;
-  padding: 0 31px 0 29px;
+  padding: 23px;
   background: var(--fill);
   color: var(--on-fill);
-  clip-path: inset(0 100% 0 0 round 14px);
+  clip-path: inset(100% 0 0 0 round 14px);
   transition: clip-path 0.65s var(--ease);
 }
 
-.pill-fill .num,
-.pill-fill .pill-desc,
-.pill-fill .pill-year {
+.card-fill .num,
+.card-fill .card-meta {
   color: inherit;
   opacity: 0.7;
 }
 
-.pill-name {
-  font-stretch: 125%;
-  font-weight: 700;
-  font-size: clamp(19px, 2.2vw, 28px);
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-bottom {
+  display: grid;
+  gap: 12px;
   transition: transform 0.65s var(--ease);
 }
 
-.pill-desc,
-.pill-year {
-  font-size: 14px;
-  color: var(--muted);
-  white-space: nowrap;
+.card-name {
+  font-stretch: 125%;
+  font-weight: 700;
+  font-size: clamp(18px, 1.9vw, 26px);
+  line-height: 1.05;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  overflow-wrap: anywhere;
 }
 
-.pill-year {
+.card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid currentColor;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.card-year {
   font-variant-numeric: tabular-nums;
 }
 
-.pill-arrow {
-  display: grid;
-  place-items: center;
-}
-
-.pill-arrow .arrow {
+.card-arrow .arrow {
+  display: block;
   width: 14px;
   height: 14px;
   opacity: 1;
@@ -476,15 +486,15 @@ ol {
 }
 
 @media (hover: hover) {
-  .pill:hover .pill-fill {
+  .card:hover .card-fill {
     clip-path: inset(0 0 0 0 round 14px);
   }
 
-  .pill:hover .pill-name {
-    transform: translateX(10px);
+  .card:hover .card-bottom {
+    transform: translateY(-6px);
   }
 
-  .pill:hover .pill-arrow .arrow {
+  .card:hover .card-arrow .arrow {
     transform: translate(3px, -3px);
   }
 }
@@ -521,8 +531,9 @@ ol {
 
   .sidebar {
     height: auto;
+    min-height: 0;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 20px 16px;
     padding: 22px 22px 20px;
@@ -530,6 +541,8 @@ ol {
   }
 
   .wordmark {
+    grid-column: 2;
+    grid-row: 1;
     display: flex;
     gap: 0.5em;
     font-size: 17px;
@@ -537,7 +550,7 @@ ol {
 
   .toggle {
     margin: 0;
-    grid-column: 2;
+    grid-column: 3;
     grid-row: 1;
   }
 
@@ -588,36 +601,38 @@ ol {
     padding: 40px 22px 64px;
   }
 
-  .portrait {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 32px;
-  }
-
   .section {
-    margin-top: 64px;
+    margin-top: 48px;
   }
 
-  .pill {
-    height: 76px;
+  .portrait {
+    grid-column: 1;
+    grid-row: 1;
+    width: 44px;
+    margin: 0;
+    border-radius: 10px;
   }
 
-  .pill-layer {
-    grid-template-columns: 26px minmax(0, 1fr) auto 16px;
-    column-gap: 12px;
-    padding: 0 22px 0 20px;
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
   }
 
-  .pill-fill {
-    padding: 0 23px 0 21px;
+  .card {
+    aspect-ratio: auto;
+    height: 150px;
   }
 
-  .pill-name {
-    font-size: 15px;
+  .card-layer {
+    padding: 18px;
   }
 
-  .pill-desc {
-    display: none;
+  .card-fill {
+    padding: 19px;
+  }
+
+  .card-name {
+    font-size: 20px;
   }
 
   .row {

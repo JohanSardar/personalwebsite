@@ -22,6 +22,7 @@ The feel comes from three references: the minimalism of cognition.com "but bigge
 Every page has a left sidebar, like adammaj.com. It holds, top to bottom:
 
 - Johan's name in wide heavy type.
+- The Portrait: the supplied photo cropped square, tight around Johan's face, "like my X pfp", as wide as the name above it.
 - Links to Home, Projects and Interests.
 - A "Find me on" list: X (`@johansardar`), GitHub (`jujdontbudge`), LinkedIn (`johan-sardar-949767209`) and email (`johansardar77@gmail.com`).
 - A toggle between light and dark.
@@ -30,17 +31,16 @@ There is no footer and no top bar. Pages simply end.
 
 ### Home
 
-- The Portrait: the supplied photo cropped square, tight around Johan's face, "like my X pfp".
 - Four About Statements:
   - I am currently studying CS + Math at UIUC.
   - I previously built a consumer app that reached over 2,000 users.
   - I love building and designing software that I find useful, both for casual activities like learning, reading and design, and for professional ones like dev tools, sandboxes and authentication.
   - I am from New Jersey.
-- Three Project Pills, the three newest Projects. Each leads to the Projects page.
+- Three Project Cards, the three newest Projects. Each leads to the Projects page.
 
 ### Projects
 
-A list of Project Pills, the same pills as on the home page, as numbered rows. Each pill leads out to that Project's own separate site. Those sites do not exist yet, so the page launches with three Placeholder Projects, visibly labelled as placeholders, that lead nowhere.
+A list of Project Cards, the same cards as on the home page, as numbered rows. Each card leads out to that Project's own separate site. Those sites do not exist yet, so the page launches with three Placeholder Projects, visibly labelled as placeholders, that lead nowhere.
 
 ### Interests
 
@@ -55,12 +55,13 @@ Three Interest Statements, as plain prose:
 - Light by default, with a toggle for dark.
 - Monochrome, no accent colour.
 - Wide, heavy grotesque type for the name and headings. Large type and generous spacing.
-- Project Pills are wide rounded bars in numbered rows (01, 02, 03) with thin divider lines.
-- Content sits in rounded frosted-glass panels over a soft abstract grey gradient that drifts slowly.
+- Project Cards are tall numbered rectangles (01, 02, 03) standing side by side, left to right.
+- The whole window is frosted glass over a soft abstract grey gradient that drifts slowly. There is no inset panel.
+- The sidebar and the page scroll together as one piece.
 
 ### Motion
 
-- Project Pills react on hover.
+- Project Cards react on hover.
 - Content fades and slides in piece by piece when a page loads.
 - Moving between pages is a smooth transition.
 - All of it is off for people with reduced motion set.
@@ -71,21 +72,21 @@ Three Interest Statements, as plain prose:
 
 ## 4. Scenarios
 
-1. Someone hears Johan's name and opens `johansardar.com`. They see his face, read four lines about him, and see three projects. They click one and land on the Projects page.
+1. Someone hears Johan's name and opens `johansardar.com`. They see his face in the sidebar, read four lines about him, and see three projects. They click one and land on the Projects page.
 2. A visitor wants to reach him. They pick X, GitHub, LinkedIn or email from the sidebar.
 3. A visitor on a dark-mode habit flips the toggle and the whole site goes dark.
-4. Johan finishes a project. He adds it to the projects text file with its name, description, year and link, pushes, and it appears as the newest pill on both pages.
+4. Johan finishes a project. He adds it to the projects text file with its name, description, year and link, pushes, and it appears as the newest card on both pages.
 
 ## 5. Acceptance
 
-1. Open `johansardar.com` in a browser: the home page shows the Portrait, the four About Statements and three Project Pills, and `www.johansardar.com` lands on the same place.
-2. Click a Project Pill on the home page and arrive on the Projects page with a smooth transition; hover a pill and it reacts.
+1. Open `johansardar.com` in a browser: the page shows the Portrait in the sidebar, the four About Statements and three Project Cards, and `www.johansardar.com` lands on the same place.
+2. Click a Project Card on the home page and arrive on the Projects page with a smooth transition; hover a card and it reacts.
 3. Open Interests and read the three Interest Statements; flip the toggle and the site turns dark.
 4. Push a change to `main` and see it live on `johansardar.com` without doing anything else.
 
 ## 6. Names
 
-See [GLOSSARY.md](../GLOSSARY.md): Portrait, About Statement, Project, Placeholder Project, Project Pill, Interest Statement.
+See [GLOSSARY.md](../GLOSSARY.md): Portrait, About Statement, Project, Placeholder Project, Project Card, Interest Statement.
 
 ## 7. Stack
 
@@ -119,6 +120,6 @@ Drafted: this shows intent. The architecture decides.
 
 ## 11. Notes from the grill
 
-- The project sites the pills lead to will be created "right after" this site.
+- The project sites the cards lead to will be created "right after" this site.
 - Interests could later grow into separate collections like Adam's Reading or Drawings.
 - A Writing section was in the first idea and may come back.

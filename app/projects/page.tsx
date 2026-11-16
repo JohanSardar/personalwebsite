@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import ProjectPill from "@/components/ProjectPill";
+import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/lib/content";
 
 export const metadata: Metadata = { title: "Projects" };
@@ -12,9 +12,9 @@ export default function Projects() {
       <p className="lede reveal" style={{ "--i": 1 } as React.CSSProperties}>
         Things I have built. Each one lives on its own site.
       </p>
-      <div className="pills" style={{ "--base": 2 } as React.CSSProperties}>
+      <div className="cards" style={{ "--base": 2 } as React.CSSProperties}>
         {all.map((p, i) => (
-          <ProjectPill key={p.name} project={p} index={i} href={p.url} external />
+          <ProjectCard key={p.name} project={p} index={i} href={p.url} external />
         ))}
       </div>
     </>

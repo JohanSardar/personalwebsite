@@ -5,7 +5,7 @@ Johan Sardar's personal site: who he is, what he has built, and what he is into.
 ## Language
 
 **Portrait**:
-The single photo of Johan at the top of the home page, cropped tight around his face.
+The single photo of Johan, cropped tight around his face, shown in the sidebar under his name.
 _Avoid_: Avatar, headshot, hero image
 
 **About Statement**:
@@ -20,9 +20,9 @@ _Avoid_: Work, case study, portfolio item
 A Project with no real content yet, present only so layout and motion can be judged.
 _Avoid_: Dummy, mock, stub
 
-**Project Pill**:
-A wide rounded bar that stands for one Project, used on both the home page and the Projects page.
-_Avoid_: Card, rectangle, tile
+**Project Card**:
+A tall rectangle that stands for one Project, shown side by side with the others on both the home page and the Projects page.
+_Avoid_: Pill, tile, bar
 
 **Interest Statement**:
 One short first-person statement on the Interests page about something Johan cares about outside his work.
