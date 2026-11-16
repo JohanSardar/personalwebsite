@@ -4,15 +4,12 @@
   --blob-b: #9c9c9c;
   --blob-c: #e6e6e6;
   --panel: rgba(255, 255, 255, 0.4);
-  --panel-edge: rgba(255, 255, 255, 0.7);
   --ink: #0b0b0b;
   --muted: rgba(11, 11, 11, 0.56);
   --line: rgba(11, 11, 11, 0.16);
   --fill: #0b0b0b;
   --on-fill: #f4f4f4;
 
-  --gutter: 20px;
-  --radius: 28px;
   --ease: cubic-bezier(0.2, 0.7, 0.1, 1);
   color-scheme: light;
 }
@@ -23,7 +20,6 @@
   --blob-b: #000000;
   --blob-c: #262626;
   --panel: rgba(24, 24, 24, 0.5);
-  --panel-edge: rgba(255, 255, 255, 0.09);
   --ink: #f2f2f2;
   --muted: rgba(242, 242, 242, 0.56);
   --line: rgba(242, 242, 242, 0.16);
@@ -143,31 +139,28 @@ ol {
   }
 }
 
-/* ---------- Shell: one frosted panel holding sidebar and page ---------- */
+/* ---------- Shell: frosted glass across the whole window ---------- */
 
 .shell {
   display: grid;
   grid-template-columns: 300px minmax(0, 1fr);
-  min-height: calc(100dvh - var(--gutter) * 2);
-  margin: var(--gutter);
-  border-radius: var(--radius);
+  min-height: 100dvh;
   background: var(--panel);
-  border: 1px solid var(--panel-edge);
   -webkit-backdrop-filter: blur(48px) saturate(1.1);
   backdrop-filter: blur(48px) saturate(1.1);
-  transition: background 0.4s ease, border-color 0.4s ease;
+  transition: background 0.4s ease;
 }
 
 /* ---------- Sidebar ---------- */
 
 .sidebar {
   position: sticky;
-  top: var(--gutter);
+  top: 0;
   align-self: start;
   display: flex;
   flex-direction: column;
   gap: 56px;
-  height: calc(100dvh - var(--gutter) * 2);
+  height: 100dvh;
   padding: 44px 36px 36px;
 }
 
@@ -506,13 +499,9 @@ ol {
 /* ---------- Narrow screens: the sidebar becomes a top bar ---------- */
 
 @media (max-width: 860px) {
-  :root {
-    --gutter: 10px;
-    --radius: 22px;
-  }
-
   .shell {
     grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
   }
 
   .sidebar {
