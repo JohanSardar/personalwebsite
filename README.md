@@ -1,5 +1,9 @@
-<img src="assets/icon.svg" width="64" height="64" alt="">
+# johansardar.com
 
-# PersonalWebsite
+Johan Sardar's personal site. Three pages: Home, Projects and Interests.
 
-Created in [T3 Code](https://t3.codes).
+- What it is and why: [docs/SPEC.md](docs/SPEC.md)
+- The words it uses: [GLOSSARY.md](GLOSSARY.md)
+- Changing what it says: [content/README.md](content/README.md)
+
+Run it locally with `pnpm install` then `pnpm dev`. Pushing to `main` deploys it.

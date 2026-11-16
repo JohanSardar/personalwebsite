@@ -1,0 +1,7 @@
+I am currently studying CS + Math at UIUC.
+
+I previously built a consumer app that reached over 2,000 users.
+
+I love building and designing software that I find useful, both for casual activities like learning, reading and design, and for professional ones like dev tools, sandboxes and authentication.
+
+I am from New Jersey.

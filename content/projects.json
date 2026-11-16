@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Project one",
+    "description": "Coming soon",
+    "date": "2026-11-03",
+    "url": null,
+    "placeholder": true
+  },
+  {
+    "name": "Project two",
+    "description": "Coming soon",
+    "date": "2026-11-02",
+    "url": null,
+    "placeholder": true
+  },
+  {
+    "name": "Project three",
+    "description": "Coming soon",
+    "date": "2026-11-01",
+    "url": null,
+    "placeholder": true
+  }
+]
