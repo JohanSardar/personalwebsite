@@ -1,7 +1,7 @@
-I am currently studying CS + Math at UIUC.
+I'm studying CS + Math at the University of Illinois Urbana-Champaign.
 
-I previously built a consumer app that reached over 2,000 users.
+I grew up in suburban New Jersey.
 
-I love building and designing software that I find useful, both for casual activities like learning, reading and design, and for professional ones like dev tools, sandboxes and authentication.
+I previously built a consumer app that grew to over 2,000 users.
 
-I am from New Jersey.
+I love designing and building software I'd actually use: tools that make everyday things like learning, reading and design better, and the more technical kind, like dev tools, sandboxes and authentication.
