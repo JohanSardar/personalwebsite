@@ -396,110 +396,101 @@ ol {
   margin-bottom: 0;
 }
 
-/* ---------- Project cards: tall rectangles, side by side ---------- */
+/* ---------- Project cards: open cells split by thin lines ---------- */
 
 .cards {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  row-gap: 40px;
 }
 
 .card {
-  position: relative;
-  display: block;
-  aspect-ratio: 1;
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  color: var(--ink);
-  cursor: pointer;
-}
-
-.card[data-placeholder] {
-  cursor: default;
-}
-
-.card-layer {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  padding: 20px;
-  border-radius: inherit;
+  padding: 0 22px 4px;
+  border-left: 1px solid var(--line);
+  color: var(--ink);
 }
 
-/* The inverted copy sits on top and is wiped in from the bottom. */
-.card-fill {
-  position: absolute;
-  inset: -1px;
-  height: auto;
-  padding: 21px;
-  background: var(--fill);
-  color: var(--on-fill);
-  clip-path: inset(100% 0 0 0 round 14px);
-  transition: clip-path 0.65s var(--ease);
-}
-
-.card-fill .num,
-.card-fill .card-meta {
-  color: inherit;
-  opacity: 0.7;
-}
-
-.card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card-bottom {
+.card-media {
+  position: relative;
   display: grid;
-  gap: 12px;
-  transition: transform 0.65s var(--ease);
+  place-items: center;
+  aspect-ratio: 16 / 10;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--line);
 }
 
-.card-name {
-  font-stretch: 125%;
-  font-weight: 700;
-  font-size: clamp(15px, 1.5vw, 20px);
-  line-height: 1.05;
-  letter-spacing: 0.02em;
+.card-media video,
+.card-still {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* The Still covers the Demo Video until the video is playing. */
+.card-still {
+  transition: opacity 0.35s ease;
+}
+
+.card-media[data-playing] .card-still {
+  opacity: 0;
+}
+
+.card-placeholder {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  overflow-wrap: anywhere;
-}
-
-.card-meta {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding-top: 12px;
-  border-top: 1px solid currentColor;
-  font-size: 13px;
   color: var(--muted);
 }
 
-.card-year {
-  font-variant-numeric: tabular-nums;
+.card-name {
+  font-stretch: 112%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
-.card-arrow .arrow {
-  display: block;
-  width: 14px;
-  height: 14px;
-  opacity: 1;
-  transition: transform 0.65s var(--ease);
+.card-desc {
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.card-repo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 20px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.card-repo svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
 }
 
 @media (hover: hover) {
-  .card:hover .card-fill {
-    clip-path: inset(0 0 0 0 round 14px);
+  .card-repo {
+    transition: opacity 0.25s ease;
   }
 
-  .card:hover .card-bottom {
-    transform: translateY(-6px);
+  .cards:hover .card:not(:hover) {
+    opacity: 0.55;
   }
 
-  .card:hover .card-arrow .arrow {
-    transform: translate(3px, -3px);
+  .card {
+    transition: opacity 0.3s ease;
   }
 }
 
@@ -593,34 +584,23 @@ ol {
     margin-top: 48px;
   }
 
+  .cards {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 0;
+  }
+
+  .card {
+    padding: 22px 0;
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
+
   .portrait {
     grid-column: 1;
     grid-row: 1;
     width: 44px;
     margin: 0;
     border-radius: 10px;
-  }
-
-  .cards {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 10px;
-  }
-
-  .card {
-    aspect-ratio: auto;
-    height: 132px;
-  }
-
-  .card-layer {
-    padding: 18px;
-  }
-
-  .card-fill {
-    padding: 19px;
-  }
-
-  .card-name {
-    font-size: 17px;
   }
 
 }

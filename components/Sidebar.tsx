@@ -37,7 +37,7 @@ export default function Sidebar() {
       </nav>
 
       <div className="find">
-        <p className="label">Find me on</p>
+        <p className="label">Links</p>
         <ul>
           {socials.map((s) => (
             <li key={s.label}>

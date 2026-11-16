@@ -3,6 +3,10 @@
 Everything the site says lives here.
 
 - `about.txt`: the About Statements on the home page, one per paragraph (blank line between).
-- `projects.json`: the Projects. Each has a `name`, a one-line `description`, a `date` (YYYY-MM-DD, newest shows first) and a `url` to its own site. Use `"url": null` and `"placeholder": true` for a project that is not ready.
+- `projects.json`: the Projects, in the order they appear. The first three show on the home page. Each has:
+  - `name` and a one-line `description`
+  - `repo`: its GitHub repo as `owner/name`
+  - `still`: the picture shown at rest, such as `/projects/apple-bridge.jpg`, or `null` for the placeholder
+  - `video`: the clip that plays on hover, such as `/projects/apple-bridge.mp4`, or `null` for none
 
-Edit, commit and push to `main`; the site updates itself.
+Put Still and Demo Video files in `public/projects/`. Edit, commit and push to `main`; the site updates itself.

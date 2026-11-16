@@ -27,7 +27,7 @@ export default function Home() {
         </header>
         <div className="cards" style={{ "--base": about.length + 2 } as React.CSSProperties}>
           {latest.map((p, i) => (
-            <ProjectCard key={p.name} project={p} index={i} href="/projects" />
+            <ProjectCard key={p.name} project={p} index={i} />
           ))}
         </div>
       </section>

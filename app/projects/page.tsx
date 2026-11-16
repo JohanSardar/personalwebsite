@@ -10,11 +10,11 @@ export default function Projects() {
     <>
       <h1 className="title reveal">Projects</h1>
       <p className="lede reveal" style={{ "--i": 1 } as React.CSSProperties}>
-        Things I have built. Each one lives on its own site.
+        Things I have built.
       </p>
       <div className="cards" style={{ "--base": 2 } as React.CSSProperties}>
         {all.map((p, i) => (
-          <ProjectCard key={p.name} project={p} index={i} href={p.url} external />
+          <ProjectCard key={p.name} project={p} index={i} />
         ))}
       </div>
     </>

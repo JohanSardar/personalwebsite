@@ -1,23 +1,37 @@
 [
   {
-    "name": "Project one",
-    "description": "Coming soon",
-    "date": "2026-11-03",
-    "url": null,
-    "placeholder": true
+    "name": "Apple Bridge",
+    "description": "Your Mac's Messages, Mail, Calendar and Notes for coding agents.",
+    "repo": "JohanSardar/apple-bridge",
+    "still": null,
+    "video": null
   },
   {
-    "name": "Project two",
-    "description": "Coming soon",
-    "date": "2026-11-02",
-    "url": null,
-    "placeholder": true
+    "name": "Hyperthymesia",
+    "description": "An exact replica of every day, built from what your devices observe.",
+    "repo": "JohanSardar/hyperthymesia",
+    "still": null,
+    "video": null
   },
   {
-    "name": "Project three",
-    "description": "Coming soon",
-    "date": "2026-11-01",
-    "url": null,
-    "placeholder": true
+    "name": "BOGO",
+    "description": "Verification before tool use for agents.",
+    "repo": "JohanSardar/bogo",
+    "still": null,
+    "video": null
+  },
+  {
+    "name": "Reflex",
+    "description": "Send marks, words and your screen from an iPad to your coding agent.",
+    "repo": "JohanSardar/reflex",
+    "still": null,
+    "video": null
+  },
+  {
+    "name": "Phoenix",
+    "description": "Record an agent run, then replay any moment of it in a sandbox.",
+    "repo": "JohanSardar/phoenix",
+    "still": null,
+    "video": null
   }
 ]

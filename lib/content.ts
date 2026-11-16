@@ -6,9 +6,12 @@ const dir = join(process.cwd(), "content");
 export type Project = {
   name: string;
   description: string;
-  date: string;
-  url: string | null;
-  placeholder?: boolean;
+  /** GitHub repo as "owner/name". */
+  repo: string;
+  /** Picture shown at rest. Null shows the placeholder. */
+  still: string | null;
+  /** Clip that plays on hover. Null means nothing plays. */
+  video: string | null;
 };
 
 function statements(file: string): string[] {
@@ -20,7 +23,7 @@ function statements(file: string): string[] {
 
 export const aboutStatements = () => statements("about.txt");
 
+/** Projects in the order written in the file. */
 export function projects(): Project[] {
-  const all = JSON.parse(readFileSync(join(dir, "projects.json"), "utf8")) as Project[];
-  return all.sort((a, b) => b.date.localeCompare(a.date));
+  return JSON.parse(readFileSync(join(dir, "projects.json"), "utf8")) as Project[];
 }

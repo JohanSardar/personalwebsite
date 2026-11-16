@@ -13,13 +13,21 @@ One short first-person statement about Johan on the home page, such as where he 
 _Avoid_: Bio, bullet, tagline
 
 **Project**:
-One thing Johan has built, which lives on its own separate site that this site points to.
+One thing Johan has built, which this site points to through its GitHub repo.
 _Avoid_: Work, case study, portfolio item
 
-**Placeholder Project**:
-A Project with no real content yet, present only so layout and motion can be judged.
-_Avoid_: Dummy, mock, stub
-
 **Project Card**:
-A tall rectangle that stands for one Project, shown side by side with the others on both the home page and the Projects page.
-_Avoid_: Pill, tile, bar
+An open cell that stands for one Project, holding its Still, name, one-line description and repo link.
+_Avoid_: Pill, tile, bar, box
+
+**Still**:
+The picture a Project Card shows at rest. It is chosen separately and need not be a frame of the Demo Video.
+_Avoid_: Poster, thumbnail, first frame
+
+**Demo Video**:
+The short silent clip of a Project that plays in its Project Card while the pointer is over it.
+_Avoid_: Preview, GIF, trailer
+
+**Placeholder**:
+The stand-in a Project Card shows while a Project has no Still or Demo Video of its own.
+_Avoid_: Dummy, mock, stub
