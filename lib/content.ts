@@ -19,7 +19,6 @@ function statements(file: string): string[] {
 }
 
 export const aboutStatements = () => statements("about.txt");
-export const interestStatements = () => statements("interests.txt");
 
 export function projects(): Project[] {
   const all = JSON.parse(readFileSync(join(dir, "projects.json"), "utf8")) as Project[];

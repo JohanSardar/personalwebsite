@@ -4,13 +4,13 @@ Status: 2026-11-16, written from the grill.
 
 ## 1. Goal
 
-Johan Sardar has no personal site. This is one, at `johansardar.com`: a small, quiet place that says who he is, points at what he has built, and says what he is into. It is for anyone who looks him up. It is deliberately minimal to start.
+Johan Sardar has no personal site. This is one, at `johansardar.com`: a small, quiet place that says who he is and points at what he has built. It is for anyone who looks him up. It is deliberately minimal to start.
 
 The feel comes from three references: the minimalism of cognition.com "but bigger", the organisation of adammaj.com, and the look of the figure.ai footer (wide heavy type, numbered rows, frosted glass).
 
 ## 2. Principles
 
-- **Minimal first.** Three pages and nothing else. Anything not asked for stays out, so the site can be finished and stay tidy.
+- **Minimal first.** Two pages and nothing else. Anything not asked for stays out, so the site can be finished and stay tidy.
 - **The look matters as much as the content.** Spacing and motion must be right even while projects are empty, which is why placeholders exist.
 - **Content is plain text in the repo.** Changing a statement or adding a project is editing a text file and pushing. No admin screen.
 - **Motion is subtle and optional.** People who have reduced motion set on their device get none.
@@ -23,7 +23,7 @@ Every page has a left sidebar, like adammaj.com. It holds, top to bottom:
 
 - Johan's name in wide heavy type.
 - The Portrait: the supplied photo cropped square, tight around Johan's face, "like my X pfp", as wide as the name above it.
-- Links to Home, Projects and Interests.
+- Links to Home and Projects.
 - A "Find me on" list: X (`@johansardar`), GitHub (`jujdontbudge`), LinkedIn (`johan-sardar-949767209`) and email (`johansardar77@gmail.com`).
 - A toggle between light and dark.
 
@@ -41,14 +41,6 @@ There is no footer and no top bar. Pages simply end.
 ### Projects
 
 A list of Project Cards, the same cards as on the home page, as numbered rows. Each card leads out to that Project's own separate site. Those sites do not exist yet, so the page launches with three Placeholder Projects, visibly labelled as placeholders, that lead nowhere.
-
-### Interests
-
-Three Interest Statements, as plain prose:
-
-- I love cats, big and small.
-- I am too much of a music addict; I have had to force myself to quit a couple of times.
-- I am into epistemology and understanding what it means to know things. I am always open to new styles of understanding, and to figuring out the best way to transmit and consume knowledge.
 
 ### Look
 
@@ -81,12 +73,12 @@ Three Interest Statements, as plain prose:
 
 1. Open `johansardar.com` in a browser: the page shows the Portrait in the sidebar, the four About Statements and three Project Cards, and `www.johansardar.com` lands on the same place.
 2. Click a Project Card on the home page and arrive on the Projects page with a smooth transition; hover a card and it reacts.
-3. Open Interests and read the three Interest Statements; flip the toggle and the site turns dark.
+3. Flip the toggle and the site turns dark.
 4. Push a change to `main` and see it live on `johansardar.com` without doing anything else.
 
 ## 6. Names
 
-See [GLOSSARY.md](../GLOSSARY.md): Portrait, About Statement, Project, Placeholder Project, Project Card, Interest Statement.
+See [GLOSSARY.md](../GLOSSARY.md): Portrait, About Statement, Project, Placeholder Project, Project Card.
 
 ## 7. Stack
 
@@ -100,11 +92,12 @@ See [GLOSSARY.md](../GLOSSARY.md): Portrait, About Statement, Project, Placehold
 Drafted: this shows intent. The architecture decides.
 
 - Pages are pre-built so they arrive with content in place.
-- Content files: one for About Statements, one for Interest Statements, one for Projects (name, description, year, link, date).
+- Content files: one for About Statements, one for Projects (name, description, year, link, date).
 - Two DNS records at Namecheap as Vercel specifies them: one for the bare domain, one for `www`.
 
 ## 9. Not doing
 
+- **An Interests page.** Built first, then removed at Johan's request.
 - **Writing or a blog.** "No writing or anything for now."
 - **A footer.** The Figure footer is "just the vibe and aesthetic", not a section.
 - **Individual project pages.** Each Project lives on its own separate site, built later.
@@ -116,10 +109,8 @@ Drafted: this shows intent. The architecture decides.
 - ASSUMED: on a phone, where a sidebar does not fit, it becomes a compact bar at the top with the same links.
 - ASSUMED: the square Portrait has slightly rounded corners, to match the rounded panels.
 - ASSUMED: Placeholder Projects are labelled "Project one", "Project two", "Project three" with "Coming soon".
-- ASSUMED: the wording of the About and Interest Statements above, tidied from Johan's notes.
 
 ## 11. Notes from the grill
 
 - The project sites the cards lead to will be created "right after" this site.
-- Interests could later grow into separate collections like Adam's Reading or Drawings.
 - A Writing section was in the first idea and may come back.

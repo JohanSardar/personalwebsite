@@ -503,23 +503,6 @@ ol {
   }
 }
 
-/* ---------- Numbered rows (Interests) ---------- */
-
-.rows {
-  max-width: 760px;
-  border-top: 1px solid var(--line);
-  margin-top: 0;
-}
-
-.row {
-  display: grid;
-  grid-template-columns: 34px minmax(0, 1fr);
-  column-gap: 20px;
-  align-items: baseline;
-  padding: 18px 0;
-  border-bottom: 1px solid var(--line);
-}
-
 /* ---------- Narrow screens: the sidebar becomes a top bar ---------- */
 
 @media (max-width: 860px) {
@@ -640,11 +623,6 @@ ol {
     font-size: 17px;
   }
 
-  .row {
-    grid-template-columns: 26px minmax(0, 1fr);
-    column-gap: 12px;
-    padding: 24px 0;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

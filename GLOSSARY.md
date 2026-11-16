@@ -1,6 +1,6 @@
 # Personal Website
 
-Johan Sardar's personal site: who he is, what he has built, and what he is into.
+Johan Sardar's personal site: who he is and what he has built.
 
 ## Language
 
@@ -23,7 +23,3 @@ _Avoid_: Dummy, mock, stub
 **Project Card**:
 A tall rectangle that stands for one Project, shown side by side with the others on both the home page and the Projects page.
 _Avoid_: Pill, tile, bar
-
-**Interest Statement**:
-One short first-person statement on the Interests page about something Johan cares about outside his work.
-_Avoid_: Hobby, topic, collection

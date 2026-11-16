@@ -1,6 +1,6 @@
 # johansardar.com
 
-Johan Sardar's personal site. Three pages: Home, Projects and Interests.
+Johan Sardar's personal site. Two pages: Home and Projects.
 
 - What it is and why: [docs/SPEC.md](docs/SPEC.md)
 - The words it uses: [GLOSSARY.md](GLOSSARY.md)

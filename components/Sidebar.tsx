@@ -9,7 +9,6 @@ import ThemeToggle from "./ThemeToggle";
 const nav = [
   { label: "Home", href: "/" },
   { label: "Projects", href: "/projects" },
-  { label: "Interests", href: "/interests" },
 ];
 
 export default function Sidebar() {
