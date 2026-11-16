@@ -8,9 +8,10 @@ export default function Home() {
   const latest = projects().slice(0, 3);
   return (
     <>
+      <h2 className="heading reveal">About me</h2>
       <div className="statements">
         {about.map((text, i) => (
-          <p key={i} className="statement reveal" style={{ "--i": i } as React.CSSProperties}>
+          <p key={i} className="statement reveal" style={{ "--i": i + 1 } as React.CSSProperties}>
             {text}
           </p>
         ))}
@@ -18,7 +19,7 @@ export default function Home() {
 
       <section className="section">
         <header className="section-head reveal" style={{ "--i": about.length + 1 } as React.CSSProperties}>
-          <h2 className="label">Latest projects</h2>
+          <h2 className="heading">Projects</h2>
           <Link href="/projects" className="social">
             All projects
             <Arrow />

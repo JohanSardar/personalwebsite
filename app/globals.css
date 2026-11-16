@@ -44,7 +44,7 @@ body {
   min-height: 100dvh;
   color: var(--ink);
   font-family: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -72,8 +72,8 @@ ol {
 
 :focus-visible {
   outline: 2px solid var(--ink);
-  outline-offset: 4px;
-  border-radius: 6px;
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
 /* ---------- Backdrop: a slow grey drift behind the glass ---------- */
@@ -179,7 +179,7 @@ ol {
   display: grid;
   font-stretch: 125%;
   font-weight: 800;
-  font-size: 28px;
+  font-size: 26px;
   line-height: 0.98;
   letter-spacing: 0.09em;
   text-transform: uppercase;
@@ -210,11 +210,11 @@ ol {
   display: flex;
   align-items: baseline;
   gap: 16px;
-  padding: 13px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--line);
   font-stretch: 112%;
   font-weight: 500;
-  font-size: 19px;
+  font-size: 15px;
   letter-spacing: 0.01em;
   color: var(--muted);
   transition: color 0.25s ease, padding-left 0.35s var(--ease);
@@ -251,7 +251,7 @@ ol {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--ink);
 }
@@ -325,8 +325,7 @@ ol {
 }
 
 .page {
-  max-width: 1040px;
-  padding: 40px clamp(28px, 5vw, 72px) 80px;
+  padding: 40px clamp(24px, 4vw, 56px) 72px;
 }
 
 .reveal {
@@ -353,35 +352,36 @@ ol {
 
 .statements {
   display: grid;
-  gap: 22px;
+  gap: 12px;
 }
 
 .statement {
-  font-size: clamp(21px, 2.1vw, 28px);
-  font-weight: 450;
-  line-height: 1.32;
-  letter-spacing: -0.012em;
+  max-width: 68ch;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.55;
   text-wrap: pretty;
 }
 
+.heading,
 .title {
   font-stretch: 125%;
   font-weight: 800;
-  font-size: clamp(40px, 6.4vw, 84px);
-  line-height: 0.95;
-  letter-spacing: 0.02em;
+  font-size: 26px;
+  line-height: 1;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .lede {
-  font-size: 19px;
+  font-size: 17px;
   color: var(--muted);
-  margin-bottom: 44px;
+  margin-bottom: 28px;
 }
 
 .section {
-  margin-top: 64px;
+  margin-top: 56px;
 }
 
 .section-head {
@@ -389,7 +389,11 @@ ol {
   align-items: baseline;
   justify-content: space-between;
   gap: 16px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+}
+
+.section-head .heading {
+  margin-bottom: 0;
 }
 
 /* ---------- Project cards: tall rectangles, side by side ---------- */
@@ -403,7 +407,7 @@ ol {
 .card {
   position: relative;
   display: block;
-  aspect-ratio: 5 / 8;
+  aspect-ratio: 1;
   border: 1px solid var(--line);
   border-radius: 14px;
   color: var(--ink);
@@ -419,7 +423,7 @@ ol {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 22px;
+  padding: 20px;
   border-radius: inherit;
 }
 
@@ -428,7 +432,7 @@ ol {
   position: absolute;
   inset: -1px;
   height: auto;
-  padding: 23px;
+  padding: 21px;
   background: var(--fill);
   color: var(--on-fill);
   clip-path: inset(100% 0 0 0 round 14px);
@@ -456,7 +460,7 @@ ol {
 .card-name {
   font-stretch: 125%;
   font-weight: 700;
-  font-size: clamp(18px, 1.9vw, 26px);
+  font-size: clamp(15px, 1.5vw, 20px);
   line-height: 1.05;
   letter-spacing: 0.02em;
   text-transform: uppercase;
@@ -469,7 +473,7 @@ ol {
   gap: 12px;
   padding-top: 12px;
   border-top: 1px solid currentColor;
-  font-size: 14px;
+  font-size: 13px;
   color: var(--muted);
 }
 
@@ -502,8 +506,9 @@ ol {
 /* ---------- Numbered rows (Interests) ---------- */
 
 .rows {
+  max-width: 760px;
   border-top: 1px solid var(--line);
-  margin-top: 44px;
+  margin-top: 0;
 }
 
 .row {
@@ -511,7 +516,7 @@ ol {
   grid-template-columns: 34px minmax(0, 1fr);
   column-gap: 20px;
   align-items: baseline;
-  padding: 30px 0;
+  padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
 
@@ -620,7 +625,7 @@ ol {
 
   .card {
     aspect-ratio: auto;
-    height: 150px;
+    height: 132px;
   }
 
   .card-layer {
@@ -632,7 +637,7 @@ ol {
   }
 
   .card-name {
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .row {
