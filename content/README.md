@@ -10,4 +10,4 @@ Everything the site says lives here.
   - `stillDark` (optional): a version of the Still for the dark theme
   - `video`: the clip that plays on hover, such as `/projects/apple-bridge.mp4`, or `null` for none
 
-Put Still and Demo Video files in `public/projects/`. Edit, commit and push to `main`; the site updates itself.
+Put Still and Demo Video files in `public/projects/`. The card area is 16:9, so make both that shape or their edges get cropped. Edit, commit and push to `main`; the site updates itself.

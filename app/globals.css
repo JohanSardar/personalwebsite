@@ -416,7 +416,7 @@ ol {
   position: relative;
   display: grid;
   place-items: center;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
   margin-bottom: 20px;
   overflow: hidden;
   border-radius: 8px;
