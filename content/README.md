@@ -7,6 +7,7 @@ Everything the site says lives here.
   - `name` and a one-line `description`
   - `repo`: its GitHub repo as `owner/name`
   - `still`: the picture shown at rest, such as `/projects/apple-bridge.jpg`, or `null` for the placeholder
+  - `stillDark` (optional): a version of the Still for the dark theme
   - `video`: the clip that plays on hover, such as `/projects/apple-bridge.mp4`, or `null` for none
 
 Put Still and Demo Video files in `public/projects/`. Edit, commit and push to `main`; the site updates itself.

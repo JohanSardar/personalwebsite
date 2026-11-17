@@ -1,0 +1,58 @@
+[
+  {
+    "file": "public/projects/apple-bridge/still-1-dark.png",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 309322,
+    "sha256": "baa5eaf30c185ffc8bebf4e3eaafa57cd05453bfa2d90e9ac1bb09d3d76858a5"
+  },
+  {
+    "file": "public/projects/apple-bridge/still-1.png",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 438005,
+    "sha256": "20a5d6fd817a7b3d2f9dd58f395894cc416dcdce68e06e0e7f05748c44606bdd"
+  },
+  {
+    "file": "public/projects/apple-bridge/still-2-dark.png",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 263356,
+    "sha256": "9fb18c6b9aa16efa8b92a1ead55f26aa3b501bc29564c47417da25c579331476"
+  },
+  {
+    "file": "public/projects/apple-bridge/still-2.png",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 369797,
+    "sha256": "810150a95b5bfae3ed0639b6ed835fc61b8e940d9fb3948513293b39be36865b"
+  },
+  {
+    "file": "public/projects/apple-bridge/still-3-dark.png",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 285455,
+    "sha256": "227ccf6c180e6896d89f96fd10492df4b08c686a272922cc94201f6564feb1d4"
+  },
+  {
+    "file": "public/projects/apple-bridge/still-3.png",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 379858,
+    "sha256": "daa33ae9259c27b2156d37da146349579f5cb6e862e311376e744957f345054a"
+  },
+  {
+    "file": "public/projects/apple-bridge/still-4-dark.png",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 246065,
+    "sha256": "40d3a615b2a138a26e7f8f6706f54d9a691756a23112143f1a491084e74f9c85"
+  },
+  {
+    "file": "public/projects/apple-bridge/still-4.png",
+    "width": 1600,
+    "height": 1000,
+    "bytes": 372472,
+    "sha256": "6f8cd0f55f891b86e92cd887cff014d5c5f21cd7f5f80050392db8c514ef90ec"
+  }
+]

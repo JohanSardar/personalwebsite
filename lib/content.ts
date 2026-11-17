@@ -10,6 +10,8 @@ export type Project = {
   repo: string;
   /** Picture shown at rest. Null shows the placeholder. */
   still: string | null;
+  /** Optional version of the Still for the dark theme. */
+  stillDark?: string | null;
   /** Clip that plays on hover. Null means nothing plays. */
   video: string | null;
 };

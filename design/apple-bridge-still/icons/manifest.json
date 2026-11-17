@@ -1,0 +1,82 @@
+[
+  {
+    "app": "Messages",
+    "source": "/System/Applications/Messages.app/Contents/Resources/AppIcon.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/messages.png"
+  },
+  {
+    "app": "Mail",
+    "source": "/System/Applications/Mail.app/Contents/Resources/ApplicationIcon.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/mail.png"
+  },
+  {
+    "app": "Calendar",
+    "source": "/System/Applications/Calendar.app/Contents/Resources/AppIcon.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/calendar.png"
+  },
+  {
+    "app": "Notes",
+    "source": "/System/Applications/Notes.app/Contents/Resources/AppIcon.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/notes.png"
+  },
+  {
+    "app": "Reminders",
+    "source": "/System/Applications/Reminders.app/Contents/Resources/AppIcon.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/reminders.png"
+  },
+  {
+    "app": "Contacts",
+    "source": "/System/Applications/Contacts.app/Contents/Resources/Contacts.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/contacts.png"
+  },
+  {
+    "app": "Photos",
+    "source": "/System/Applications/Photos.app/Contents/Resources/AppIcon.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/photos.png"
+  },
+  {
+    "app": "Maps",
+    "source": "/System/Applications/Maps.app/Contents/Resources/AppIcon.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/maps.png"
+  },
+  {
+    "app": "Music",
+    "source": "/System/Applications/Music.app/Contents/Resources/AppIcon.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/music.png"
+  },
+  {
+    "app": "Safari",
+    "source": "/Applications/Safari.app/Contents/Resources/AppIcon.icns",
+    "rendition": "icon_128x128@2x.png",
+    "width": 256,
+    "height": 256,
+    "output": "icons/safari.png"
+  }
+]

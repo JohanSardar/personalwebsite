@@ -54,8 +54,18 @@ export default function ProjectCard({ project, index }: Props) {
           <video ref={video} src={project.video} muted loop playsInline preload="metadata" />
         )}
         {project.still ? (
-          // eslint-disable-next-line @next/next/no-img-element
-          <img className="card-still" src={project.still} alt="" />
+          <>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              className={project.stillDark ? "card-still still-light" : "card-still"}
+              src={project.still}
+              alt=""
+            />
+            {project.stillDark && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img className="card-still still-dark" src={project.stillDark} alt="" loading="lazy" />
+            )}
+          </>
         ) : (
           !project.video && <span className="card-placeholder">Preview soon</span>
         )}

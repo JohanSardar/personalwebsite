@@ -441,6 +441,15 @@ ol {
   opacity: 0;
 }
 
+.still-dark,
+:root[data-theme="dark"] .still-light {
+  display: none;
+}
+
+:root[data-theme="dark"] .still-dark {
+  display: block;
+}
+
 .card-placeholder {
   font-size: 12px;
   font-weight: 500;

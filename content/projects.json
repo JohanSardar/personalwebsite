@@ -3,7 +3,8 @@
     "name": "Apple Bridge",
     "description": "Your Mac's Messages, Mail, Calendar and Notes for coding agents.",
     "repo": "JohanSardar/apple-bridge",
-    "still": "/projects/apple-bridge-frame.jpg",
+    "still": "/projects/apple-bridge-still.png",
+    "stillDark": "/projects/apple-bridge-still-dark.png",
     "video": "/projects/apple-bridge.mp4"
   },
   {
