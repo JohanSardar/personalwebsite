@@ -8,10 +8,21 @@ const agents = [
   { label: "Codex", link: "codex" },
   { label: "Cursor", link: "cursor" },
   { label: "Claude app", link: "claude-desktop" },
+  { label: "Grok Bot", link: "grok-bot" },
   { label: "Other", link: "other" },
 ];
 
 function promptFor(link: string) {
+  if (link === "grok-bot") {
+    return [
+      `Set up Apple Bridge so you can use my Messages, Mail, Calendar, Notes and Reminders.`,
+      `On my Mac, install it from ${installUrl} and follow the setup guide it points to.`,
+      `Then connect yourself with \`bridge link grok-bot --json\`.`,
+      `You reach my Mac through your Tailscale plugin, so if it isn't set up yet, walk me through signing in.`,
+      `I will click Allow and grant the Mac permissions. Never approve anything for me.`,
+      `When you're done, read my reminder lists to show me it works.`,
+    ].join(" ");
+  }
   return [
     `Set up Apple Bridge on my Mac so you can use my Messages, Mail, Calendar, Notes and Reminders.`,
     `Install it from ${installUrl} and follow the setup guide it points to.`,
