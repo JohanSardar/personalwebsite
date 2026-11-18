@@ -71,7 +71,7 @@ Added 2026-11-18 at Johan's request. `/apple-bridge` holds the Apple Bridge docs
 
 - Light by default, with a toggle for dark.
 - Monochrome, no accent colour.
-- The font is Newsreader, a serif, and the colours are warm ivory in light mode and dark slate in dark mode, both taken from darioamodei.com at Johan's request.
+- The font is Geist and the colours are near white in light mode and black in dark mode, both taken from vercel.com/docs at Johan's request.
 - Project Cards are open cells, three across, split by thin lines, with no boxes and no logos.
 - The background is one flat colour, light grey or near black. There is no gradient and no inset panel.
 - The sidebar and the page scroll together as one piece.

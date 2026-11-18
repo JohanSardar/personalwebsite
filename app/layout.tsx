@@ -1,12 +1,10 @@
 import type { Metadata } from "next";
-import { Newsreader } from "next/font/google";
+import { Geist } from "next/font/google";
 import "./globals.css";
 
-const text = Newsreader({
+const text = Geist({
   variable: "--font-text",
   subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["opsz"],
 });
 
 export const metadata: Metadata = {
