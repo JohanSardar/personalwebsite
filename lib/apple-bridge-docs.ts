@@ -22,6 +22,7 @@ export const docTree: DocLink[] = [
       { title: "Everything else", href: "/apple-bridge/tools#everything-else" },
     ],
   },
+  { title: "Organize your Photos", href: "/apple-bridge/organize-photos", summary: "A prompt that sorts your Photos library into albums." },
   { title: "Sources", href: "/apple-bridge/sources", summary: "Every app an agent can read and change on your Mac." },
   { title: "Privacy and security", href: "/apple-bridge/security", summary: "What stays on your Mac and what each agent may do." },
   { title: "CLI reference", href: "/apple-bridge/cli", summary: "The bridge commands for you and your agent." },

@@ -2586,3 +2586,16 @@ ol {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
+/* ---------- Docs: a long prompt shown in full ---------- */
+
+.prompt-head {
+  border-top: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.prompt-long {
+  white-space: pre-wrap;
+  font-size: 14px;
+  line-height: 1.6;
+}

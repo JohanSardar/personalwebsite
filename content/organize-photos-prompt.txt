@@ -1,0 +1,29 @@
+Go through my whole Photos library with Apple Bridge and organize it into albums that make sense for my life. Don't use a fixed list of categories. Look at what's actually there and pick albums that fit me.
+
+How to work:
+
+1. Get the lay of the land first. List my existing albums, then use photos.places and searches by year and month to see where and when I take photos. Look for clusters: a burst of photos somewhere away from home is probably a trip, the same place over and over is probably home, work or school.
+2. Look at the photos themselves to understand them. Use contact sheets of about 20 photos per sample, spread across each cluster, rather than every single photo. Open a photo larger only when you can't tell what it is.
+3. Before you create anything, show me a plan: each album you want to make, its name, roughly how many photos, and a sentence on how you decided what goes in it. Wait for my ok.
+4. Then build it. Create each album, add photos in batches, and read the album back to check the count.
+
+What good albums look like:
+
+- Trips named by place and date, like "Lisbon, May 2025". Split separate visits to the same place.
+- Events like weddings, birthdays, graduations and holidays, named by what and when.
+- People I clearly photograph a lot, named by how they show up, like "Mom" if it's obvious from context or "Friend with red hair" if not. Ask me to name them instead of guessing.
+- Ongoing themes that show up across years, like pets, food, sports, concerts, nature, cars or projects, but only if there are enough photos to be worth an album.
+- Practical stuff like screenshots, receipts, documents, whiteboards and memes, so they're out of the way.
+- Only go as fine-grained as the library deserves. Ten good albums beat a hundred thin ones.
+
+Rules:
+
+- Never delete, hide or edit a photo. Only create albums and add photos to them.
+- Don't touch my existing albums or rename them. If one already covers something, tell me instead of making a duplicate.
+- A photo can be in more than one album.
+- If you're unsure where something goes, leave it out and list it at the end.
+- Keep what you see private. Don't describe people's faces or private documents back to me in detail.
+
+Update me through the process so I can know what you are doing.
+
+When you're done, give me a short summary: the albums you made, how many photos are in each, and anything you weren't sure about.
