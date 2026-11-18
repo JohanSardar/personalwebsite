@@ -4,12 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { docHref, groups, REPO, TESTFLIGHT } from "@/lib/docs";
 import { Arrow } from "@/components/Sidebar";
+import BackLink from "@/components/BackLink";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export default function DocsSidebar() {
   const pathname = usePathname();
   return (
     <aside className="sidebar docs-sidebar">
+      <BackLink />
       <Link href="/reflex" className="wordmark" aria-label="Reflex docs, start">
         <span>Reflex</span>
         <span>Docs</span>

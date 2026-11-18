@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { Arrow } from "@/components/Sidebar";
+import BackLink from "@/components/BackLink";
 import ThemeToggle from "@/components/ThemeToggle";
 import { docTree, installUrl, repoUrl, type DocLink } from "@/lib/apple-bridge-docs";
 
@@ -60,6 +61,7 @@ export default function DocsSidebar() {
   return (
     <aside className="sidebar ab-sidebar">
       <div className="ab-brand">
+        <BackLink />
         <Link href="/apple-bridge" className="wordmark" aria-label="Apple Bridge docs">
           <span>Apple</span>
           <span>Bridge</span>

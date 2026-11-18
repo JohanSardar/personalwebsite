@@ -2522,3 +2522,46 @@ ol {
   margin: 0;
   color: var(--muted);
 }
+
+/* ---------- Docs: the link back to the main site ---------- */
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  transition: color 0.25s ease;
+}
+
+.back-link:hover {
+  color: var(--ink);
+}
+
+.back-link svg {
+  width: 12px;
+  height: 12px;
+  transition: transform 0.25s var(--ease);
+}
+
+.back-link:hover svg {
+  transform: translateX(-3px);
+}
+
+.ab-brand .back-link {
+  margin-bottom: 8px;
+}
+
+.sidebar > .back-link {
+  margin-bottom: -18px;
+}
+
+@media (max-width: 860px) {
+  .sidebar > .back-link,
+  .ab-brand .back-link {
+    grid-column: 1 / -1;
+    margin-bottom: -8px;
+  }
+}

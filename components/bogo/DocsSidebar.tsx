@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useRef } from "react";
 import { docGroups, docPages, REPO } from "@/lib/bogo-docs";
 import { Arrow } from "@/components/Sidebar";
+import BackLink from "@/components/BackLink";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export default function DocsSidebar() {
@@ -41,6 +42,7 @@ export default function DocsSidebar() {
 
   return (
     <aside className="sidebar bd-docs-sidebar">
+      <BackLink />
       <Link href="/bogo" className="wordmark" aria-label="BOGO docs, start">
         <span>BOGO</span>
         <span className="bd-wordmark-sub">Docs</span>
