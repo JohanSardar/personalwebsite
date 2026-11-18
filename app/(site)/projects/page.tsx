@@ -23,7 +23,7 @@ export default function Projects() {
         <section className="section wip">
           <div className="section-head">
             <h2 className="heading reveal" style={{ "--i": 2 + done.length } as React.CSSProperties}>
-              A bunch of works in progress 🐣
+              Currently building
             </h2>
           </div>
           <div className="cards" style={{ "--base": 3 + done.length } as React.CSSProperties}>

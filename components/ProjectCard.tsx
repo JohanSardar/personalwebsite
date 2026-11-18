@@ -80,7 +80,7 @@ export default function ProjectCard({ project, index }: Props) {
               <span className="card-placeholder-emoji" aria-hidden="true">
                 🐣
               </span>
-              Work in progress
+              Coming soon
             </span>
           ) : (
             <span className="card-placeholder">Preview soon</span>

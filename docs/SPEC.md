@@ -134,8 +134,8 @@ Drafted: this shows intent. The architecture decides.
 
 - ASSUMED: on a phone, where a sidebar does not fit, it becomes a compact bar at the top with the same links.
 - ASSUMED: the square Portrait has slightly rounded corners, to match the rounded panels.
-- The Placeholder is a plain grey block. For an unfinished Project it shows a hatching chick over "Work in progress"; for a finished one with no picture yet it reads "Preview soon".
-- The Projects page lists finished Projects first, then a line and the heading "A bunch of works in progress" over the unfinished ones.
+- The Placeholder is a plain grey block. For an unfinished Project it shows a hatching chick over "Coming soon"; for a finished one with no picture yet it reads "Preview soon".
+- The Projects page lists finished Projects first, then a line and the heading "Currently building" over the unfinished ones.
 
 ## 11. Notes from the grill
 
