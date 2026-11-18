@@ -7,7 +7,6 @@ export const metadata: Metadata = { title: "Projects" };
 export default function Projects() {
   const all = projects();
   const done = all.filter((p) => !p.wip);
-  const wip = all.filter((p) => p.wip);
   return (
     <>
       <h1 className="title reveal">Projects</h1>
@@ -19,20 +18,13 @@ export default function Projects() {
           <ProjectCard key={p.name} project={p} index={i} />
         ))}
       </div>
-      {wip.length > 0 && (
-        <section className="section wip">
-          <div className="section-head">
-            <h2 className="heading reveal" style={{ "--i": 2 + done.length } as React.CSSProperties}>
-              Currently building
-            </h2>
-          </div>
-          <div className="cards" style={{ "--base": 3 + done.length } as React.CSSProperties}>
-            {wip.map((p, i) => (
-              <ProjectCard key={p.name} project={p} index={i} />
-            ))}
-          </div>
-        </section>
-      )}
+      <p className="more reveal" style={{ "--i": 2 + done.length } as React.CSSProperties}>
+        Probably shipping a bunch of unfinished stuff, which you can see{" "}
+        <a href="https://github.com/JohanSardar" target="_blank" rel="noreferrer">
+          here
+        </a>
+        .
+      </p>
     </>
   );
 }

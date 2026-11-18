@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Archivo } from "next/font/google";
+import { Newsreader } from "next/font/google";
 import "./globals.css";
 
-const archivo = Archivo({
-  variable: "--font-archivo",
+const text = Newsreader({
+  variable: "--font-text",
   subsets: ["latin"],
-  axes: ["wdth"],
+  style: ["normal", "italic"],
+  axes: ["opsz"],
 });
 
 export const metadata: Metadata = {
@@ -18,7 +19,7 @@ const themeScript = `try{var t=localStorage.getItem("theme");if(t==="dark"||t===
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={archivo.variable} data-theme="light" suppressHydrationWarning>
+    <html lang="en" className={text.variable} data-theme="light" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>

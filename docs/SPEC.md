@@ -71,7 +71,7 @@ Added 2026-11-18 at Johan's request. `/apple-bridge` holds the Apple Bridge docs
 
 - Light by default, with a toggle for dark.
 - Monochrome, no accent colour.
-- Wide, heavy grotesque type for the name and headings. Body text is small, "more like Adam's site".
+- The font is Newsreader, a serif, and the colours are warm ivory in light mode and dark slate in dark mode, both taken from darioamodei.com at Johan's request.
 - Project Cards are open cells, three across, split by thin lines, with no boxes and no logos.
 - The background is one flat colour, light grey or near black. There is no gradient and no inset panel.
 - The sidebar and the page scroll together as one piece.
@@ -135,7 +135,7 @@ Drafted: this shows intent. The architecture decides.
 - ASSUMED: on a phone, where a sidebar does not fit, it becomes a compact bar at the top with the same links.
 - ASSUMED: the square Portrait has slightly rounded corners, to match the rounded panels.
 - The Placeholder is a plain grey block. For an unfinished Project it shows a hatching chick over "Coming soon"; for a finished one with no picture yet it reads "Preview soon".
-- The Projects page lists finished Projects first, then a line and the heading "Currently building" over the unfinished ones.
+- The Projects page lists the finished Projects, then a line and a note that unfinished work is on Johan's GitHub profile, with a link.
 
 ## 11. Notes from the grill
 
