@@ -4,10 +4,11 @@ How to work:
 
 1. Get the lay of the land first. List my existing albums and smart albums, then use photos.places and searches by year and month to see where and when I take photos. Look for clusters: a burst of photos somewhere away from home is probably a trip, the same place over and over is probably home, work or school.
 2. Use what Apple already knows. If a photo comes with a type or a tag, such as screenshot, selfie, video, Live Photo, favorite, a smart album or a place name, trust that instead of guessing.
-3. Then look at the photos themselves. Place and date only tell you which photos to look at, not what they are. Go through every photo you plan to put in an album on contact sheets of about 20 at a time, and open a photo larger when you can't tell what it is. Don't judge a cluster from a sample.
-4. Sort by what each photo means, not where it was taken. Photos from the same place and week can be different things: class notes, a night out with friends, food, a game. Split them into the albums they belong in, and leave out the ones that only happen to share the place or date.
-5. Before you create anything, show me a plan: each album you want to make, its name, roughly how many photos, what the photos in it actually show, and whether you looked at all of them. Wait for my ok.
-6. Then build it. Create each album, add photos in batches, and read the album back to check the count.
+3. Check where each photo came from, not only where it was taken. Use photos.get to read its details, such as the original file name, the kind of file and whether it has a location. A photo I took with my phone camera usually has a camera file name and often a location. Something saved from Snapchat, WhatsApp, Instagram, a download or a screen recording usually has neither. Tell me early on what you can and can't see about where photos came from.
+4. Then look at the photos themselves. Place and date only tell you which photos to look at, not what they are. Go through every photo you plan to put in an album on contact sheets of about 20 at a time, and open a photo larger when you can't tell what it is. Don't judge a cluster from a sample.
+5. Sort by what each photo means, not where it was taken. Photos from the same place and week can be different things: class notes, a night out with friends, food, a game. Split them into the albums they belong in, and leave out the ones that only happen to share the place or date.
+6. Before you create anything, show me a plan: each album you want to make, its name, roughly how many photos, what the photos in it actually show, and whether you looked at all of them. Wait for my ok.
+7. Then build it. Create each album, add photos in batches, and read the album back to check the count.
 
 What good albums look like:
 
@@ -22,6 +23,8 @@ Rules:
 
 - Never delete, hide or edit a photo. Only create albums and add photos to them.
 - Don't touch my existing albums or rename them. If one already covers something, tell me instead of making a duplicate.
+- Saved and downloaded media is not mine by default. Never put a photo or video in a trip, place or school album because of how it looks. It goes there only if its location or date puts it there, or what it shows makes it certain. Put saved clips and pictures in their own album, such as "Saved from apps", or leave them out and list them.
+- A photo with no location has no place. Don't guess one from the room or the scenery.
 - Never add a photo to an album you haven't looked at. An album name is a promise about what's in it, so "Campus" means photos of campus, not every photo taken near it.
 - A photo can be in more than one album.
 - If you're unsure where something goes, leave it out and list it at the end.
