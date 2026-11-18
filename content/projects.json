@@ -8,11 +8,11 @@
     "video": "/projects/apple-bridge.mp4"
   },
   {
-    "name": "Hyperthymesia",
-    "description": "An exact replica of every day, built from what your devices observe.",
-    "repo": "JohanSardar/hyperthymesia",
-    "still": null,
-    "video": null
+    "name": "Reflex",
+    "description": "Send marks, words and your screen from an iPad to your coding agent.",
+    "repo": "JohanSardar/reflex",
+    "still": "/projects/reflex-still.jpg",
+    "video": "/projects/reflex.mp4"
   },
   {
     "name": "BOGO",
@@ -22,9 +22,9 @@
     "video": null
   },
   {
-    "name": "Reflex",
-    "description": "Send marks, words and your screen from an iPad to your coding agent.",
-    "repo": "JohanSardar/reflex",
+    "name": "Hyperthymesia",
+    "description": "An exact replica of every day, built from what your devices observe.",
+    "repo": "JohanSardar/hyperthymesia",
     "still": null,
     "video": null
   },

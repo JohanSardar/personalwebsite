@@ -40,7 +40,7 @@ There is no footer and no top bar. Pages simply end.
 
 ### Projects
 
-All five Projects as Project Cards, in this order: Apple Bridge, Hyperthymesia, BOGO, Reflex, Phoenix. The home page shows the first three.
+All five Projects as Project Cards, in this order: Apple Bridge, Reflex, BOGO, Hyperthymesia, Phoenix. The home page shows the first three.
 
 Each Project Card holds, top to bottom:
 
@@ -50,7 +50,7 @@ Each Project Card holds, top to bottom:
 
 Hovering a card starts its Demo Video, silent and looping, in place of the Still. When the pointer leaves, the video stops and the Still comes back. On a touch screen the video plays while the card is on screen. Clicking anywhere on a card opens its GitHub repo.
 
-No Project has a Still or Demo Video yet, so every card shows the Placeholder and nothing plays.
+Apple Bridge and Reflex have a Still and a Demo Video. The other three show the Placeholder and nothing plays.
 
 The descriptions:
 
