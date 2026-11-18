@@ -17,7 +17,6 @@ function promptFor(link: string) {
     `Install it from ${installUrl} and follow the setup guide it points to.`,
     `Run every step on this Mac yourself and connect with \`bridge link ${link}\`.`,
     `I will click Allow and grant the Mac permissions. Never approve anything for me.`,
-    `Don't set up Tailscale or any remote access.`,
     `When you're done, read my reminder lists to show me it works.`,
   ].join(" ");
 }
