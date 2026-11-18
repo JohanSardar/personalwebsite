@@ -1,6 +1,4 @@
-I'm studying CS + Math at the University of Illinois Urbana-Champaign.
-
-I grew up in suburban New Jersey.
+I'm from New Jersey, studying CS + Math at the University of Illinois Urbana-Champaign.
 
 I previously built a consumer app that grew to over 2,000 users.
 

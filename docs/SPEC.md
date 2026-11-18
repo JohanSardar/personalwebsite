@@ -31,9 +31,8 @@ There is no footer and no top bar. Pages simply end.
 
 ### Home
 
-- An "About me" heading over five About Statements:
-  - I'm studying CS + Math at the University of Illinois Urbana-Champaign.
-  - I grew up in suburban New Jersey.
+- An "About me" heading over four About Statements:
+  - I'm from New Jersey, studying CS + Math at the University of Illinois Urbana-Champaign.
   - I previously built a consumer app that grew to over 2,000 users.
   - I love designing and building software I'd see myself and others using, such as learning, design and productivity tools, as well as dev tools, sandbox environments and verification tools.
   - Although I am super AI-pilled, I still code projects manually for fun and believe it is very important to understand fundamental concepts at a higher level.
