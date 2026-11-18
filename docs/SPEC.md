@@ -50,7 +50,7 @@ Each Project Card holds, top to bottom:
 
 Hovering a card starts its Demo Video, silent and looping, in place of the Still. When the pointer leaves, the video stops and the Still comes back. On a touch screen the video plays while the card is on screen. Clicking a card opens the Project's docs page on this site when it has one (Apple Bridge, Reflex, BOGO), and its GitHub repo otherwise. The repo link at the bottom of the card always opens the repo.
 
-Apple Bridge and Reflex have a Still and a Demo Video. The other three show the Placeholder and nothing plays.
+Apple Bridge, Reflex and BOGO each have a Still and a Demo Video.
 
 The descriptions:
 

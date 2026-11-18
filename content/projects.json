@@ -20,8 +20,8 @@
     "name": "BOGO",
     "description": "Verification before tool use for agents.",
     "repo": "JohanSardar/bogo",
-    "still": null,
-    "video": null,
+    "still": "/projects/bogo-still.jpg",
+    "video": "/projects/bogo.mp4",
     "docs": "/bogo"
   },
   {
