@@ -9,16 +9,16 @@ export default function PageNav({ href }: { href: string }) {
     <nav className="ab-pager" aria-label="Pages">
       {prev ? (
         <Link href={prev.href} className="ab-pager-link">
-          <span className="label">Previous</span>
           <span className="ab-pager-title">{prev.title}</span>
+          <span className="label">Previous</span>
         </Link>
       ) : (
         <span />
       )}
       {next && (
         <Link href={next.href} className="ab-pager-link ab-pager-next">
-          <span className="label">Next</span>
           <span className="ab-pager-title">{next.title}</span>
+          <span className="label">Next</span>
         </Link>
       )}
     </nav>

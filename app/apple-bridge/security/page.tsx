@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
 import Code from "@/components/apple-bridge/Code";
+import { Head } from "@/components/apple-bridge/Bits";
 import PageNav from "@/components/apple-bridge/PageNav";
 
-export const metadata: Metadata = { title: "Privacy and access" };
+export const metadata: Metadata = { title: "Privacy and security" };
 
-export default function Privacy() {
+export default function Security() {
   return (
     <>
-      <h1 className="title">Privacy and access</h1>
-      <p className="lede muted">
-        Apple Bridge reads your private messages, mail and notes. This page says where that data goes and who can use it.
-      </p>
+      <Head
+        title="Privacy and security"
+        lede="Apple Bridge reads your private messages, mail and notes. This page says where that data goes and who can use it."
+      />
 
       <h2 id="on-your-mac">It stays on your Mac</h2>
       <p>
@@ -56,7 +57,7 @@ bridge agents revoke <id>                   # remove its access`}</Code>
         . Keep command output out of public issues, since it can contain your data.
       </p>
 
-      <PageNav href="/apple-bridge/privacy" />
+      <PageNav href="/apple-bridge/security" />
     </>
   );
 }

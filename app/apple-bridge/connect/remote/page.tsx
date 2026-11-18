@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Code from "@/components/apple-bridge/Code";
+import { Head } from "@/components/apple-bridge/Bits";
 import PageNav from "@/components/apple-bridge/PageNav";
 
 export const metadata: Metadata = { title: "Other computers" };
@@ -7,11 +8,10 @@ export const metadata: Metadata = { title: "Other computers" };
 export default function Remote() {
   return (
     <>
-      <h1 className="title">Other computers</h1>
-      <p className="lede muted">
-        Skip this page if your agent can run commands on your Mac. Remote access is off by default and most setups never
-        need it.
-      </p>
+      <Head
+        title="Other computers"
+        lede="Skip this page if your agent can run commands on your Mac. Remote access is off by default and most setups never need it."
+      />
 
       <h2 id="when">When you need it</h2>
       <p>
@@ -51,7 +51,7 @@ export default function Remote() {
         Allow, Grok Bot gets its connector address and key and sets up the connector itself. You never copy the key.
       </p>
 
-      <PageNav href="/apple-bridge/remote" />
+      <PageNav href="/apple-bridge/connect/remote" />
     </>
   );
 }

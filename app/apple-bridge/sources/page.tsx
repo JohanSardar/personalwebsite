@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Head } from "@/components/apple-bridge/Bits";
 import PageNav from "@/components/apple-bridge/PageNav";
 
 export const metadata: Metadata = { title: "Sources" };
@@ -20,11 +21,10 @@ const sources: [string, string, string][] = [
 export default function Sources() {
   return (
     <>
-      <h1 className="title">Sources</h1>
-      <p className="lede muted">
-        Everything an agent can reach on your Mac. Each source works once you allow its Mac permission, and you can leave
-        any of them off.
-      </p>
+      <Head
+        title="Sources"
+        lede="Everything an agent can reach on your Mac. Each source works once you allow its Mac permission, and you can leave any of them off."
+      />
 
       <h2 id="what-it-can-reach">What it can reach</h2>
       <div className="table">

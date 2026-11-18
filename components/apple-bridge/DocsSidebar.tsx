@@ -2,15 +2,58 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 import { Arrow } from "@/components/Sidebar";
 import ThemeToggle from "@/components/ThemeToggle";
-import { docGroups, docPages, installUrl, repoUrl } from "@/lib/apple-bridge-docs";
+import { docTree, installUrl, repoUrl, type DocLink } from "@/lib/apple-bridge-docs";
 
 const links = [
   { label: "GitHub", href: repoUrl },
   { label: "Installer", href: installUrl },
   { label: "Changelog", href: `${repoUrl}/blob/main/CHANGELOG.md` },
 ];
+
+function Row({ item, pathname }: { item: DocLink; pathname: string }) {
+  const inside = pathname === item.href || pathname.startsWith(`${item.href}/`);
+  const [override, setOverride] = useState<boolean | null>(null);
+  const open = override ?? inside;
+  const kids = item.children ?? [];
+  return (
+    <li>
+      <div className="ab-row" data-current={pathname === item.href || undefined}>
+        <Link href={item.href} className="ab-link" aria-current={pathname === item.href ? "page" : undefined}>
+          {item.title}
+        </Link>
+        {kids.length > 0 && (
+          <button
+            type="button"
+            className="ab-chevron"
+            aria-expanded={open}
+            aria-label={`${open ? "Hide" : "Show"} ${item.title} pages`}
+            onClick={() => setOverride(!open)}
+          >
+            <svg viewBox="0 0 12 12" aria-hidden="true">
+              <path d="M4.5 2.5 8 6l-3.5 3.5" fill="none" stroke="currentColor" strokeWidth="1.4" />
+            </svg>
+          </button>
+        )}
+      </div>
+      {kids.length > 0 && open && (
+        <ul className="ab-children">
+          {kids.map((k) => (
+            <li key={k.href}>
+              <div className="ab-row" data-current={pathname === k.href || undefined}>
+                <Link href={k.href} className="ab-link" aria-current={pathname === k.href ? "page" : undefined}>
+                  {k.title}
+                </Link>
+              </div>
+            </li>
+          ))}
+        </ul>
+      )}
+    </li>
+  );
+}
 
 export default function DocsSidebar() {
   const pathname = usePathname();
@@ -26,28 +69,13 @@ export default function DocsSidebar() {
         </Link>
       </div>
 
-      <nav className="ab-nav" aria-label="Docs">
-        {docGroups.map((group) => (
-          <div key={group.label} className="ab-group">
-            <p className="label">{group.label}</p>
-            <div className="nav">
-              {group.pages.map((page) => {
-                const n = docPages.indexOf(page) + 1;
-                return (
-                  <Link
-                    key={page.href}
-                    href={page.href}
-                    className="nav-link"
-                    aria-current={pathname === page.href ? "page" : undefined}
-                  >
-                    <span className="num">{String(n).padStart(2, "0")}</span>
-                    <span>{page.title}</span>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        ))}
+      <nav className="ab-tree" aria-label="Docs">
+        <p className="label">Docs</p>
+        <ul>
+          {docTree.map((item) => (
+            <Row key={item.href} item={item} pathname={pathname} />
+          ))}
+        </ul>
       </nav>
 
       <div className="find">
