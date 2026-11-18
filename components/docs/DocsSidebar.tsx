@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { docHref, docs, REPO, TESTFLIGHT } from "@/lib/docs";
+import { docHref, groups, REPO, TESTFLIGHT } from "@/lib/docs";
 import { Arrow } from "@/components/Sidebar";
 import ThemeToggle from "@/components/ThemeToggle";
 
@@ -15,17 +15,16 @@ export default function DocsSidebar() {
         <span>Docs</span>
       </Link>
 
-      <nav className="nav docs-nav" aria-label="Docs pages">
-        {docs.map((d, i) => (
-          <Link
-            key={d.slug}
-            href={docHref(d.slug)}
-            className="nav-link"
-            aria-current={pathname === docHref(d.slug) ? "page" : undefined}
-          >
-            <span className="num">{String(i + 1).padStart(2, "0")}</span>
-            <span>{d.title}</span>
-          </Link>
+      <nav className="docs-nav" aria-label="Docs pages">
+        {groups.map((g) => (
+          <div key={g.name} className="docs-group">
+            <p className="label">{g.name}</p>
+            {g.pages.map((d) => (
+              <Link key={d.slug} href={docHref(d.slug)} className="docs-link" aria-current={pathname === docHref(d.slug) ? "page" : undefined}>
+                {d.title}
+              </Link>
+            ))}
+          </div>
         ))}
       </nav>
 

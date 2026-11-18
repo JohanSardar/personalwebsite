@@ -1,112 +1,87 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Block from "@/components/docs/Block";
 import DocPage from "@/components/docs/DocPage";
-import { Arrow } from "@/components/Sidebar";
-import { TESTFLIGHT } from "@/lib/docs";
-import { CLAUDE_ADD, CLAUDE_PROMPT, CODEX_BLOCK, CODEX_PROMPT } from "@/lib/docs-text";
+import { Architecture } from "@/components/docs/Diagrams";
+import { REPO, TESTFLIGHT } from "@/lib/docs";
 
-export const metadata: Metadata = { title: "Get Started" };
+export const metadata: Metadata = { title: "Welcome" };
 
-export default function GetStarted() {
+export default function Welcome() {
   return (
-    <DocPage
-      slug=""
-      lede="Reflex sends what you draw, write and say on your iPad to Claude Code or Codex on your Mac. Paste one prompt into your agent and it sets itself up."
-    >
+    <DocPage slug="" lede="Reflex is an iPad app that sends what you draw, write and say to the coding agent on your Mac.">
+      <p className="hook">Some things are faster to draw than to type.</p>
+      <p>
+        You circle the broken button. You sketch the screen you want. You hold the mic and say “this one, but blue”. Then you press Send, and Claude Code or Codex gets the marks, the words and a picture of the board in one message.
+      </p>
+      <p>The agent answers in its own session on your Mac. It never writes on your board.</p>
+
       <figure className="doc-figure">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/projects/reflex-still.jpg" width={1600} height={900} alt="A hand sketching three app screens on an iPad, next to a Claude Code window that answers the sketch" />
       </figure>
-      <p className="note">Reflex is a public TestFlight beta for iPadOS 26 or later. The Mac side is open source under the MIT license.</p>
 
-      <h2>Quick start</h2>
-      <p>You need three things before you begin.</p>
+      <h2>In one picture</h2>
+      <p>
+        Reflex connects to your agent through <strong>MCP</strong>, the same way any other tool does. There is no plugin for a specific harness and no cloud service in the middle.
+      </p>
+      <Architecture />
+      <p>Three words come up on every page.</p>
       <ul className="dots">
         <li>
-          The <a href={TESTFLIGHT}>Reflex iPad beta</a> from TestFlight.
+          A <strong>Board</strong> is an endless canvas on the iPad. It stays on the iPad.
         </li>
         <li>
-          A Mac with <a href="https://nodejs.org/en/download">Node.js 22 or later</a> and Git.
+          A <strong>Send</strong> is one message you choose to send. It holds your new marks, your spoken words and images of the board.
         </li>
-        <li>Claude Code or Codex, already working on that Mac.</li>
+        <li>
+          The <strong>Link</strong> is a small background service on your Mac. It pairs with the iPad, stores each Send and hands it to the agents you approved.
+        </li>
       </ul>
-      <p>You do not need a Reflex account or a server.</p>
 
-      <h3>
-        <span className="num">01</span>Paste this prompt into your agent
-      </h3>
-      <p>Open your agent in the folder where you work and paste the prompt. The agent adds Reflex to its own tools.</p>
-      <Block
-        copy="Copy prompt"
-        wrap
-        tabs={[
-          { name: "Claude Code", text: CLAUDE_PROMPT },
-          { name: "Codex", text: CODEX_PROMPT },
-        ]}
-      />
-
-      <h3>
-        <span className="num">02</span>Ask for a code
-      </h3>
-      <p>
-        Start a new session and say <strong>connect my iPad</strong>. In Codex, say <strong>connect my iPad to Reflex</strong>. Allow Reflex’s tools if your agent asks. It gives you a six-digit code.
-      </p>
-
-      <h3>
-        <span className="num">03</span>Type the code on your iPad
-      </h3>
-      <p>Open Reflex and tap the connection button at the top right. It looks like a laptop. Enter the code, and allow Local Network access when iPadOS asks.</p>
-      <p>Typing the code pairs the iPad with your Mac and approves the agent that gave you the code. There is no second approval step.</p>
-      <figure className="doc-figure narrow">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src="/reflex/ipad-connect.png" width={1032} height={1376} loading="lazy" alt="The Connection sheet on iPad with the Mac connected, Claude Code allowed and a code being typed" />
-        <figcaption>The Connection sheet, with a code half typed.</figcaption>
-      </figure>
-
-      <h3>
-        <span className="num">04</span>Draw and tap Send
-      </h3>
-      <p>
-        Draw or write on the board, then tap <strong>Send</strong>. You can also hold the mic and speak. Letting go of the mic sends your words. Read the answer in your agent session.
-      </p>
-
-      <h2>Set up from the terminal</h2>
-      <p>You can skip the prompt and add Reflex yourself. For Claude Code, run this in the folder where you use it.</p>
-      <Block tabs={[{ name: "Terminal", text: CLAUDE_ADD }]} />
-      <p>
-        For Codex, add this block to <code>~/.codex/config.toml</code>.
-      </p>
-      <Block tabs={[{ name: "config.toml", text: CODEX_BLOCK }]} />
-      <p>Then start a new session and continue from step 02. The install downloads a small prebuilt file. It does not download the iPad source or build the app.</p>
-
-      <h2>Learn more</h2>
-      <div className="doc-cards">
-        <Link href="/reflex/how-it-works" className="doc-card">
-          <b>
-            How It Works <Arrow />
-          </b>
-          <span>The path from the iPad to the Mac Link to your agent.</span>
-        </Link>
-        <Link href="/reflex/send" className="doc-card">
-          <b>
-            Draw, Speak and Send <Arrow />
-          </b>
-          <span>What one Send holds and when it leaves the iPad.</span>
-        </Link>
-        <Link href="/reflex/privacy" className="doc-card">
-          <b>
-            Privacy and Security <Arrow />
-          </b>
-          <span>Who can read a Send, and what the relay can see.</span>
-        </Link>
-        <Link href="/reflex/troubleshooting" className="doc-card">
-          <b>
-            Troubleshooting <Arrow />
-          </b>
-          <span>What to check when the agent does not see Reflex or pairing stalls.</span>
-        </Link>
+      <h2>How the agent receives a Send</h2>
+      <div className="table-scroll">
+        <table className="doc-table">
+          <thead>
+            <tr>
+              <th>Harness</th>
+              <th>How a Send arrives</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Any MCP harness</td>
+              <td>
+                The agent calls a tool named <code>wait_for_user</code>. The call returns when you press Send.
+              </td>
+            </tr>
+            <tr>
+              <td>Claude Code</td>
+              <td>The same tool, and optionally a channel. With the channel on, a Send starts a new turn without the agent waiting on anything.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <p>
+        <Link href="/reflex/delivery">MCP and Delivery</Link> shows both on the wire.
+      </p>
+
+      <h2>Where to go next</h2>
+      <ul className="dots">
+        <li>
+          You want to try it. <Link href="/reflex/quick-start">Quick Start</Link> takes about five minutes and needs no account.
+        </li>
+        <li>
+          You want the wiring first. Read <Link href="/reflex/how-it-works">How It Works</Link>, then <Link href="/reflex/delivery">MCP and Delivery</Link>.
+        </li>
+        <li>
+          You want to know who can read your boards. Read <Link href="/reflex/privacy">Privacy and Security</Link>.
+        </li>
+      </ul>
+
+      <h2>What does Reflex cost?</h2>
+      <p>
+        Nothing. The Mac side is <a href={REPO}>open source</a> under the MIT license. The iPad app is a free <a href={TESTFLIGHT}>TestFlight beta</a> for iPadOS 26 or later. The default relay is free, and you can run your own. Your agent runs on the subscription you already have.
+      </p>
     </DocPage>
   );
 }

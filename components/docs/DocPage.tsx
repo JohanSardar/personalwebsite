@@ -7,7 +7,7 @@ export default function DocPage({ slug, lede, children }: { slug: DocSlug; lede:
   const prev = docs[i - 1];
   const next = docs[i + 1];
   return (
-    <article className="doc">
+    <article className="doc wide">
       <h1 className="title reveal">{docs[i].title}</h1>
       <p className="lede reveal" style={{ "--i": 1 } as React.CSSProperties}>
         {lede}

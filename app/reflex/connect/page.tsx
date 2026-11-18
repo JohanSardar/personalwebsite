@@ -33,25 +33,8 @@ export default function Connect() {
 
       <h2>How a Send arrives</h2>
       <p>
-        The agent calls a tool named <code>wait_for_user</code>. The call returns when you send something. The agent answers, then calls the tool again and waits for the next Send.
+        Through a tool call in every harness, and optionally through a channel in Claude Code. <Link href="/reflex/delivery">MCP and Delivery</Link> shows both.
       </p>
-      <p>If your agent stops waiting, ask it to wait for your iPad again.</p>
-
-      <h2>Webhooks</h2>
-      <p>An approved receiver can also get each Send as a signed web request.</p>
-      <Block tabs={[{ name: "Terminal", text: `${NPX} adapters add webhook --url <url>` }]} />
-
-      <h2>Pushed Sends in Claude Code</h2>
-      <p>Claude Code can take each Send as a new turn without waiting on a tool. This uses a development channel, needs a local checkout and a flag, and is optional.</p>
-      <Block
-        tabs={[
-          {
-            name: "Terminal",
-            text: `node agent/bin/reflex.mjs setup
-claude --dangerously-load-development-channels server:reflex`,
-          },
-        ]}
-      />
       <p>
         See <Link href="/reflex/commands">Commands</Link> for everything the command line can do.
       </p>
