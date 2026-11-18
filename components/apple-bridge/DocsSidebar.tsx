@@ -64,7 +64,7 @@ export default function DocsSidebar() {
   return (
     <aside className="sidebar ab-sidebar">
       <div className="ab-brand">
-        <BackLink />
+        <BackLink repo={repoUrl} />
         <Link href="/apple-bridge" className="wordmark" aria-label="Apple Bridge docs">
           <span>Apple</span>
           <span>Bridge</span>

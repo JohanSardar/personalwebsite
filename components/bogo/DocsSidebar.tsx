@@ -42,7 +42,7 @@ export default function DocsSidebar() {
 
   return (
     <aside className="sidebar bd-docs-sidebar">
-      <BackLink />
+      <BackLink repo={REPO} />
       <Link href="/bogo" className="wordmark" aria-label="BOGO docs, start">
         <span>BOGO</span>
         <span className="bd-wordmark-sub">Docs</span>

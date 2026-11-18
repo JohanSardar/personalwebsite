@@ -2555,19 +2555,55 @@ ol {
   transform: translateX(-3px);
 }
 
-.ab-brand .back-link {
+.back-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.repo-link {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  margin: -6px -6px -6px 0;
+  border-radius: 8px;
+  color: var(--muted);
+  transition: color 0.25s ease, background-color 0.25s ease;
+}
+
+.repo-link:hover {
+  color: var(--ink);
+  background: var(--line);
+}
+
+.repo-link svg {
+  width: 17px;
+  height: 17px;
+}
+
+.ab-brand .back-row {
   margin-bottom: 8px;
 }
 
-.sidebar > .back-link {
+.sidebar > .back-row {
   margin-bottom: -18px;
 }
 
 @media (max-width: 860px) {
-  .sidebar > .back-link,
-  .ab-brand .back-link {
+  .sidebar > .back-row,
+  .ab-brand .back-row {
     grid-column: 1 / -1;
     margin-bottom: -8px;
+  }
+
+  .back-row {
+    justify-content: flex-start;
+  }
+
+  .repo-link {
+    margin: -6px 0;
   }
 }
 

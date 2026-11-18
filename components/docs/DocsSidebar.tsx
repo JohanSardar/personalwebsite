@@ -11,7 +11,7 @@ export default function DocsSidebar() {
   const pathname = usePathname();
   return (
     <aside className="sidebar docs-sidebar">
-      <BackLink />
+      <BackLink repo={REPO} />
       <Link href="/reflex" className="wordmark" aria-label="Reflex docs, start">
         <span>Reflex</span>
         <span>Docs</span>
