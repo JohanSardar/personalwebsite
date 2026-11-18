@@ -25,7 +25,7 @@ Every page has a left sidebar, like adammaj.com. It holds, top to bottom:
 - The Portrait: the supplied photo cropped square, tight around Johan's face, "like my X pfp", as wide as the name above it.
 - Links to Home and Projects.
 - A "Links" list: X (`@johansardar`), GitHub (`JohanSardar`), LinkedIn (`johan-sardar-949767209`) and email (`johansardar77@gmail.com`).
-- A toggle between light and dark.
+- A toggle between light and dark, pinned to the bottom left corner of the window.
 
 There is no footer and no top bar. Pages simply end.
 
@@ -48,7 +48,7 @@ Each Project Card holds, top to bottom:
 - The name and a one-line description.
 - At the bottom, the GitHub mark and the repo path, such as `JohanSardar/apple-bridge`.
 
-Hovering a card starts its Demo Video, silent and looping, in place of the Still. When the pointer leaves, the video stops and the Still comes back. On a touch screen the video plays while the card is on screen. Clicking anywhere on a card opens its GitHub repo.
+Hovering a card starts its Demo Video, silent and looping, in place of the Still. When the pointer leaves, the video stops and the Still comes back. On a touch screen the video plays while the card is on screen. Clicking a card opens the Project's docs page on this site when it has one (Apple Bridge, Reflex, BOGO), and its GitHub repo otherwise. The repo link at the bottom of the card always opens the repo.
 
 Apple Bridge and Reflex have a Still and a Demo Video. The other three show the Placeholder and nothing plays.
 
@@ -70,7 +70,7 @@ Added 2026-11-18 at Johan's request. `/apple-bridge` holds the Apple Bridge docs
 - Monochrome, no accent colour.
 - Wide, heavy grotesque type for the name and headings. Body text is small, "more like Adam's site".
 - Project Cards are open cells, three across, split by thin lines, with no boxes and no logos.
-- The whole window is frosted glass over a soft abstract grey gradient that drifts slowly. There is no inset panel.
+- The background is one flat colour, light grey or near black. There is no gradient and no inset panel.
 - The sidebar and the page scroll together as one piece.
 
 ### Motion

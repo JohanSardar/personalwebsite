@@ -5,14 +5,16 @@
     "repo": "JohanSardar/apple-bridge",
     "still": "/projects/apple-bridge-still.png",
     "stillDark": "/projects/apple-bridge-still-dark.png",
-    "video": "/projects/apple-bridge.mp4"
+    "video": "/projects/apple-bridge.mp4",
+    "docs": "/apple-bridge"
   },
   {
     "name": "Reflex",
     "description": "An iPad canvas that connects to any harness via MCP.",
     "repo": "JohanSardar/reflex",
     "still": "/projects/reflex-still.jpg",
-    "video": "/projects/reflex.mp4"
+    "video": "/projects/reflex.mp4",
+    "docs": "/reflex"
   },
   {
     "name": "BOGO",

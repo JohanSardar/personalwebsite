@@ -1,9 +1,6 @@
 :root {
-  --bg: #cdcdcd;
-  --blob-a: #f4f4f4;
-  --blob-b: #9c9c9c;
-  --blob-c: #e6e6e6;
-  --panel: rgba(255, 255, 255, 0.4);
+  --bg: #f2f2f2;
+  --panel: rgba(255, 255, 255, 0.6);
   --ink: #0b0b0b;
   --muted: rgba(11, 11, 11, 0.56);
   --line: rgba(11, 11, 11, 0.16);
@@ -16,10 +13,7 @@
 
 :root[data-theme="dark"] {
   --bg: #0a0a0a;
-  --blob-a: #3d3d3d;
-  --blob-b: #000000;
-  --blob-c: #262626;
-  --panel: rgba(24, 24, 24, 0.5);
+  --panel: rgba(255, 255, 255, 0.05);
   --ink: #f2f2f2;
   --muted: rgba(242, 242, 242, 0.56);
   --line: rgba(242, 242, 242, 0.16);
@@ -76,86 +70,27 @@ ol {
   border-radius: 4px;
 }
 
-/* ---------- Backdrop: a slow grey drift behind the glass ---------- */
+/* ---------- Backdrop: one flat colour, with the sidebar divider ---------- */
 
 .backdrop {
   position: fixed;
   inset: 0;
   z-index: -1;
-  overflow: hidden;
   background: var(--bg);
   transition: background 0.4s ease;
 }
 
-/* The frost and the sidebar divider are part of the fixed backdrop, so they
-   fill the window at all times, including while the page rubber-bands. */
+/* The divider is part of the fixed backdrop, so it runs the full height of
+   the window at all times, including while the page rubber-bands. */
 .backdrop::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 1;
-  background: var(--panel);
-  -webkit-backdrop-filter: blur(48px);
-  backdrop-filter: blur(48px);
   border-left: 1px solid var(--line);
   margin-left: 240px;
-  box-shadow: -240px 0 0 0 var(--panel);
-  transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 
-.backdrop span {
-  position: absolute;
-  width: 70vmax;
-  height: 70vmax;
-  border-radius: 50%;
-  filter: blur(90px);
-  opacity: 0.9;
-  will-change: transform;
-  transition: background 0.4s ease;
-}
-
-.backdrop span:nth-child(1) {
-  background: var(--blob-a);
-  top: -30vmax;
-  left: -15vmax;
-  animation: drift-a 38s ease-in-out infinite alternate;
-}
-
-.backdrop span:nth-child(2) {
-  background: var(--blob-b);
-  bottom: -35vmax;
-  right: -20vmax;
-  animation: drift-b 46s ease-in-out infinite alternate;
-}
-
-.backdrop span:nth-child(3) {
-  background: var(--blob-c);
-  width: 50vmax;
-  height: 50vmax;
-  top: 25%;
-  left: 40%;
-  animation: drift-c 54s ease-in-out infinite alternate;
-}
-
-@keyframes drift-a {
-  to {
-    transform: translate(28vw, 22vh) scale(1.15);
-  }
-}
-
-@keyframes drift-b {
-  to {
-    transform: translate(-30vw, -24vh) scale(0.9);
-  }
-}
-
-@keyframes drift-c {
-  to {
-    transform: translate(-26vw, 18vh) scale(1.25);
-  }
-}
-
-/* ---------- Shell: frosted glass across the whole window ---------- */
+/* ---------- Shell ---------- */
 
 .shell {
   display: grid;
@@ -287,6 +222,17 @@ ol {
   cursor: pointer;
 }
 
+/* On the main site the toggle stays in the bottom left corner of the window
+   while the page scrolls. */
+@media (min-width: 861px) {
+  .shell > .sidebar .toggle {
+    position: fixed;
+    left: 28px;
+    bottom: 32px;
+    z-index: 2;
+  }
+}
+
 .toggle-track {
   display: block;
   width: 38px;
@@ -412,6 +358,12 @@ ol {
   color: var(--ink);
 }
 
+.card-main {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+}
+
 .card-media {
   position: relative;
   display: grid;
@@ -477,10 +429,17 @@ ol {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  width: fit-content;
   margin-top: auto;
   padding-top: 20px;
+  color: inherit;
   font-size: 13px;
   font-weight: 500;
+}
+
+.card-repo:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .card-repo svg {
@@ -1213,7 +1172,6 @@ ol {
   .backdrop::after {
     margin-left: 0;
     border-left: 0;
-    box-shadow: none;
   }
 
   .shell {

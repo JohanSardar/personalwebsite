@@ -1,12 +1,13 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { Project } from "@/lib/content";
 
 type Props = { project: Project; index: number };
 
 export default function ProjectCard({ project, index }: Props) {
-  const card = useRef<HTMLAnchorElement>(null);
+  const card = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
 
@@ -36,42 +37,50 @@ export default function ProjectCard({ project, index }: Props) {
     return () => seen.disconnect();
   }, []);
 
+  // The card opens the project's docs page when it has one, and its repo
+  // otherwise. The repo link at the bottom is always its own link.
+  const repoUrl = `https://github.com/${project.repo}`;
+  const Main = project.docs ? Link : "a";
+  const mainProps = project.docs
+    ? { href: project.docs }
+    : { href: repoUrl, target: "_blank", rel: "noreferrer" };
+
   return (
-    <a
+    <div
       ref={card}
       className="card reveal"
       style={{ "--i": index } as React.CSSProperties}
-      href={project.docs ?? `https://github.com/${project.repo}`}
-      {...(project.docs ? {} : { target: "_blank", rel: "noreferrer" })}
       onMouseEnter={play}
       onMouseLeave={stop}
       onFocus={play}
       onBlur={stop}
     >
-      <span className="card-media" data-playing={playing || undefined}>
-        {project.video && (
-          <video ref={video} src={project.video} muted loop playsInline preload="metadata" />
-        )}
-        {project.still ? (
-          <>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              className={project.stillDark ? "card-still still-light" : "card-still"}
-              src={project.still}
-              alt=""
-            />
-            {project.stillDark && (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img className="card-still still-dark" src={project.stillDark} alt="" loading="lazy" />
-            )}
-          </>
-        ) : (
-          !project.video && <span className="card-placeholder">Preview soon</span>
-        )}
-      </span>
-      <span className="card-name">{project.name}</span>
-      <span className="card-desc">{project.description}</span>
-      <span className="card-repo">
+      <Main className="card-main" {...mainProps}>
+        <span className="card-media" data-playing={playing || undefined}>
+          {project.video && (
+            <video ref={video} src={project.video} muted loop playsInline preload="metadata" />
+          )}
+          {project.still ? (
+            <>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                className={project.stillDark ? "card-still still-light" : "card-still"}
+                src={project.still}
+                alt=""
+              />
+              {project.stillDark && (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img className="card-still still-dark" src={project.stillDark} alt="" loading="lazy" />
+              )}
+            </>
+          ) : (
+            !project.video && <span className="card-placeholder">Preview soon</span>
+          )}
+        </span>
+        <span className="card-name">{project.name}</span>
+        <span className="card-desc">{project.description}</span>
+      </Main>
+      <a className="card-repo" href={repoUrl} target="_blank" rel="noreferrer">
         <svg viewBox="0 0 16 16" aria-hidden="true">
           <path
             fill="currentColor"
@@ -79,7 +88,7 @@ export default function ProjectCard({ project, index }: Props) {
           />
         </svg>
         {project.repo}
-      </span>
-    </a>
+      </a>
+    </div>
   );
 }
