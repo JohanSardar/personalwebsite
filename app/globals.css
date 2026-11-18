@@ -403,11 +403,20 @@ ol {
 }
 
 .card-placeholder {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--muted);
+}
+
+.card-placeholder-emoji {
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: 0;
 }
 
 .card-name {

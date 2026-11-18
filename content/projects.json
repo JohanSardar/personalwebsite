@@ -25,15 +25,36 @@
     "docs": "/bogo"
   },
   {
+    "name": "Ozi",
+    "still": null,
+    "video": null,
+    "description": "An agent harness for ADHD. You talk to one agent, and it delegates the work and keeps track of every job.",
+    "repo": "JohanSardar/ozi-harness"
+  },
+  {
+    "name": "Ozi GUI",
+    "still": null,
+    "video": null,
+    "description": "A desktop app for agent harnesses, built for ADHD, with chats, delegation and an inbox.",
+    "repo": "JohanSardar/ozi"
+  },
+  {
+    "name": "Apple Bridge iPhone",
+    "still": null,
+    "video": null,
+    "description": "An MCP tool that connects your personal agent to iPhone features such as alarms, Health and location.",
+    "repo": "JohanSardar/apple-bridge-iphone"
+  },
+  {
     "name": "Hyperthymesia",
-    "description": "An exact replica of every day, built from what your devices observe.",
+    "description": "Minute-by-minute activity tracking that pulls from many sources into a searchable memory of each day.",
     "repo": "JohanSardar/hyperthymesia",
     "still": null,
     "video": null
   },
   {
     "name": "Phoenix",
-    "description": "Record an agent run, then replay any moment of it in a sandbox.",
+    "description": "A sandbox inspired by Palantir for tuning models and harnesses. Replay any moment of an agent run with your own inputs and context.",
     "repo": "JohanSardar/phoenix",
     "still": null,
     "video": null

@@ -4,6 +4,9 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { Project } from "@/lib/content";
 
+// Unfinished projects each get one of these in place of a picture.
+const wipEmoji = ["🚧", "👷", "🧪", "🍳", "🐣", "🛠️"];
+
 type Props = { project: Project; index: number };
 
 export default function ProjectCard({ project, index }: Props) {
@@ -74,7 +77,14 @@ export default function ProjectCard({ project, index }: Props) {
               )}
             </>
           ) : (
-            !project.video && <span className="card-placeholder">Preview soon</span>
+            !project.video && (
+            <span className="card-placeholder">
+              <span className="card-placeholder-emoji" aria-hidden="true">
+                {wipEmoji[index % wipEmoji.length]}
+              </span>
+              Work in progress
+            </span>
+          )
           )}
         </span>
         <span className="card-name">{project.name}</span>

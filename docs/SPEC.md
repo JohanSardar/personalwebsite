@@ -40,7 +40,7 @@ There is no footer and no top bar. Pages simply end.
 
 ### Projects
 
-All five Projects as Project Cards, in this order: Apple Bridge, Reflex, BOGO, Hyperthymesia, Phoenix. The home page shows the first three.
+All eight Projects as Project Cards, in this order: Apple Bridge, Reflex, BOGO, Ozi, Ozi GUI, Apple Bridge iPhone, Hyperthymesia, Phoenix. The home page shows the first three.
 
 Each Project Card holds, top to bottom:
 
@@ -55,10 +55,13 @@ Apple Bridge and Reflex have a Still and a Demo Video. The other three show the 
 The descriptions:
 
 - Apple Bridge: Your Mac's Messages, Mail, Calendar and Notes for coding agents.
-- Hyperthymesia: An exact replica of every day, built from what your devices observe.
+- Ozi: An agent harness for ADHD. You talk to one agent, and it delegates the work and keeps track of every job.
+- Ozi GUI: A desktop app for agent harnesses, built for ADHD, with chats, delegation and an inbox.
+- Apple Bridge iPhone: An MCP tool that connects your personal agent to iPhone features such as alarms, Health and location.
+- Hyperthymesia: Minute-by-minute activity tracking that pulls from many sources into a searchable memory of each day.
 - BOGO: Verification before tool use for agents.
 - Reflex: An iPad canvas that connects to any harness via MCP.
-- Phoenix: Record an agent run, then replay any moment of it in a sandbox.
+- Phoenix: A sandbox inspired by Palantir for tuning models and harnesses. Replay any moment of an agent run with your own inputs and context.
 
 ### Apple Bridge docs
 
@@ -131,7 +134,7 @@ Drafted: this shows intent. The architecture decides.
 
 - ASSUMED: on a phone, where a sidebar does not fit, it becomes a compact bar at the top with the same links.
 - ASSUMED: the square Portrait has slightly rounded corners, to match the rounded panels.
-- ASSUMED: the Placeholder is a plain grey block reading "Preview soon".
+- The Placeholder is a plain grey block with an emoji over "Work in progress".
 
 ## 11. Notes from the grill
 
