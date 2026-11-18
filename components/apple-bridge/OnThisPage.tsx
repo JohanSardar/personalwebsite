@@ -11,7 +11,7 @@ export default function OnThisPage() {
   const [active, setActive] = useState("");
 
   useEffect(() => {
-    const found = Array.from(document.querySelectorAll<HTMLElement>(".doc h2[id]"));
+    const found = Array.from(document.querySelectorAll<HTMLElement>(".ab-doc h2[id]"));
     const frame = requestAnimationFrame(() =>
       setHeadings(found.map((h) => ({ id: h.id, text: h.textContent ?? "" }))),
     );

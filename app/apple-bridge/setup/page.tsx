@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Code from "@/components/docs/Code";
-import CopyPrompt from "@/components/docs/CopyPrompt";
-import PageNav from "@/components/docs/PageNav";
+import Code from "@/components/apple-bridge/Code";
+import CopyPrompt from "@/components/apple-bridge/CopyPrompt";
+import PageNav from "@/components/apple-bridge/PageNav";
 
 export const metadata: Metadata = { title: "Setup" };
 

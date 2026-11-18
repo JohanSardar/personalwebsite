@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import PageNav from "@/components/docs/PageNav";
+import PageNav from "@/components/apple-bridge/PageNav";
 
 export const metadata: Metadata = { title: "Sources" };
 

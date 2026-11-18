@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { installUrl } from "@/lib/docs";
+import { installUrl } from "@/lib/apple-bridge-docs";
 
 const agents = [
   { label: "Claude Code", link: "claude" },

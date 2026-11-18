@@ -1,31 +1,20 @@
-export type DocPage = { title: string; href: string; summary: string };
+/** The Reflex docs pages, in sidebar order. */
+export const docs = [
+  { slug: "", title: "Get Started" },
+  { slug: "how-it-works", title: "How It Works" },
+  { slug: "send", title: "Draw, Speak and Send" },
+  { slug: "pairing", title: "Pairing and Approvals" },
+  { slug: "connect", title: "Connect an Agent" },
+  { slug: "privacy", title: "Privacy and Security" },
+  { slug: "relay", title: "Relay" },
+  { slug: "commands", title: "Commands" },
+  { slug: "troubleshooting", title: "Troubleshooting" },
+] as const;
 
-export const docGroups: { label: string; pages: DocPage[] }[] = [
-  {
-    label: "Get started",
-    pages: [
-      { title: "Overview", href: "/apple-bridge", summary: "What Apple Bridge is and the one prompt that sets it up." },
-      { title: "Setup", href: "/apple-bridge/setup", summary: "Install, connect an agent and allow the Mac permissions." },
-    ],
-  },
-  {
-    label: "Use it",
-    pages: [
-      { title: "Sources", href: "/apple-bridge/sources", summary: "Everything an agent can read and change on your Mac." },
-      { title: "Tools", href: "/apple-bridge/tools", summary: "The 17 MCP tools and the terminal commands." },
-      { title: "Other computers", href: "/apple-bridge/remote", summary: "Reach your Mac from a server or a cloud agent." },
-    ],
-  },
-  {
-    label: "Trust",
-    pages: [
-      { title: "Privacy and access", href: "/apple-bridge/privacy", summary: "What stays on your Mac and what each agent may do." },
-      { title: "Troubleshooting", href: "/apple-bridge/troubleshooting", summary: "The commands that tell you what is wrong." },
-    ],
-  },
-];
+export type DocSlug = (typeof docs)[number]["slug"];
 
-export const docPages = docGroups.flatMap((g) => g.pages);
+export const docHref = (slug: string) => (slug ? `/reflex/${slug}` : "/reflex");
 
-export const installUrl = "https://eilmer.si/applebridge/install";
-export const repoUrl = "https://github.com/JohanSardar/apple-bridge";
+export const TESTFLIGHT = "https://testflight.apple.com/join/R81n88Re";
+export const REPO = "https://github.com/JohanSardar/reflex";
+export const NPX = `npx -y "github:JohanSardar/reflex#npx"`;

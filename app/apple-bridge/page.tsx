@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import CopyPrompt from "@/components/docs/CopyPrompt";
-import PageNav from "@/components/docs/PageNav";
+import CopyPrompt from "@/components/apple-bridge/CopyPrompt";
+import PageNav from "@/components/apple-bridge/PageNav";
 import { Arrow } from "@/components/Sidebar";
-import { docPages } from "@/lib/docs";
+import { docPages } from "@/lib/apple-bridge-docs";
 
 export const metadata: Metadata = { title: { absolute: "Apple Bridge docs" } };
 

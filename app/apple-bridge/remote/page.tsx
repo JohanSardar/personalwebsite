@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Code from "@/components/docs/Code";
-import PageNav from "@/components/docs/PageNav";
+import Code from "@/components/apple-bridge/Code";
+import PageNav from "@/components/apple-bridge/PageNav";
 
 export const metadata: Metadata = { title: "Other computers" };
 
