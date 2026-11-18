@@ -14,6 +14,8 @@ export type Project = {
   stillDark?: string | null;
   /** Optional docs page on this site; the card opens it in place of the repo. */
   docs?: string;
+  /** True while the project is unfinished. It is listed under the works in progress. */
+  wip?: boolean;
   /** Clip that plays on hover. Null means nothing plays. */
   video: string | null;
 };
