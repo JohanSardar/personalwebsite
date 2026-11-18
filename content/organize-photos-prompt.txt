@@ -1,4 +1,4 @@
-Go through my whole Photos library with Apple Bridge and organize it into albums that make sense for my life. Don't use a fixed list of categories. Look at what's actually there and pick albums that fit me.
+Go through my whole Photos library with Apple Bridge and organize it into albums that make sense for my life. This usually takes about 20 to 25 minutes, more for a big library. Don't use a fixed list of categories. Look at what's actually there and pick albums that fit me.
 
 How to work:
 

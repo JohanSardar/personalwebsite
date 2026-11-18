@@ -15,7 +15,10 @@ const links = [
 ];
 
 function Row({ item, pathname }: { item: DocLink; pathname: string }) {
-  const inside = pathname === item.href || pathname.startsWith(`${item.href}/`);
+  const inside =
+    pathname === item.href ||
+    pathname.startsWith(`${item.href}/`) ||
+    (item.children ?? []).some((c) => c.href === pathname);
   const [override, setOverride] = useState<boolean | null>(null);
   const open = override ?? inside;
   const kids = item.children ?? [];

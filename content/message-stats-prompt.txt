@@ -1,0 +1,47 @@
+Go through my Messages and my phone calls with Apple Bridge and tell me the stats on how I talk to people. This should take about 5 minutes, so count, don't read. Only look at the last 12 months unless I ask for longer.
+
+How to work:
+
+1. See what you can reach first. List my chats with messages.chats, and check for call history by querying the phone.call records with records.query. Tell me right away what you can and can't see, such as no call history or only part of my messages on this Mac.
+2. Put names on people. Turn phone numbers and emails into names with messages.handles and contacts. If one person has two numbers or an email, count them as one person.
+3. Count my texts. Page through each one-on-one chat with messages.thread and keep running totals of who sent each message and when. Keep group chats in their own list. If I have a lot of chats, do the 40 most active ones and tell me you stopped there.
+4. Count my calls. For each call note who it was with, whether I made it or got it, whether it was answered and how long it lasted.
+5. Work out the stats below and show them to me.
+
+Texting stats:
+
+- Who I text the most: top 10 by total messages, split into sent by me and sent by them.
+- Who replies to me the quickest and who takes the longest, by their usual reply time. Only count replies within a day, and only people with at least 20 back and forths.
+- Who I reply to the quickest and who I leave waiting the longest.
+- Who starts the conversation more, me or them. A new conversation is a message after 8 quiet hours.
+- Who I send a lot more to than I get back, and the other way around.
+- My longest streak of texting someone every day, and with who.
+- What hours and what days of the week I text the most, and who I text latest at night.
+- My busiest texting day of the year, and who it was with.
+- My most active group chats, and who talks the most in each one.
+- Who gets the most reactions from me, and who reacts to me the most.
+- Who I used to text a lot and went quiet with, and anyone new in the last 3 months.
+
+Call stats:
+
+- Who calls me the most, and who I call the most.
+- Who I spend the longest on calls with in total, and my longest single call.
+- My usual call length, and how it changes by person.
+- Whose calls I miss or don't pick up the most, and who doesn't pick up mine.
+- Phone calls next to FaceTime, if you can tell them apart.
+- What time of day I'm usually on the phone.
+
+Then add a few things I didn't ask for that you found interesting, such as who I text and call both versus only text.
+
+Rules:
+
+- Read only. Never send, reply, react, edit, delete or mark anything as read.
+- Count, don't quote. Don't show me what any message says and don't sum up what a conversation was about. Names and numbers only.
+- Every number has to come from something you counted. If you had to estimate or only looked at part of it, say so next to the number.
+- If you can't get something, like call history or reply times, say so plainly instead of guessing.
+- Leave out short codes, verification texts, spam and businesses, and tell me how many you skipped.
+- Use the name from my contacts, and the number when there's no name.
+
+Update me through the process so I can know what you are doing.
+
+When you're done, give it to me as short ranked lists with the numbers next to each name, then three or four lines on what stands out.

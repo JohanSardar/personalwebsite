@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Head } from "@/components/apple-bridge/Bits";
 import LongPrompt from "@/components/apple-bridge/LongPrompt";
 import PageNav from "@/components/apple-bridge/PageNav";
+import { docPage } from "@/lib/apple-bridge-docs";
 
 export const metadata: Metadata = { title: "Organize your Photos" };
 
@@ -17,6 +18,7 @@ export default function OrganizePhotos() {
         eyebrow="Prompts"
         title="Organize your Photos"
         lede="One prompt that has your agent sort your whole Photos library into albums that fit your life."
+        time={docPage("/apple-bridge/organize-photos").time}
       />
 
       <h2 id="before-you-start">Before you start</h2>

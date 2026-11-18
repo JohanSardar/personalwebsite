@@ -65,7 +65,7 @@ The descriptions:
 
 ### Apple Bridge docs
 
-Added 2026-11-18 at Johan's request. `/apple-bridge` holds the Apple Bridge docs in this site's look, organised like Notion's MCP docs. A docs sidebar with expandable sections replaces the site sidebar, and wide screens show an "On this page" list. Pages are Overview, Connect (with Other computers), Supported tools, Sources, Privacy and security, and CLI reference. Overview and Connect lead with one setup prompt to copy into an agent. The words avoid dashes, colons in prose and stock AI phrases. It may later move to `applebridge.johansardar.com`.
+Added 2026-11-18 at Johan's request. `/apple-bridge` holds the Apple Bridge docs in this site's look, organised like Notion's MCP docs. A docs sidebar with expandable sections replaces the site sidebar, and wide screens show an "On this page" list. Pages are Overview, Connect (with Other computers), Supported tools, Prompts (Organize your Photos, about 20 to 25 minutes, and Texting and call stats, about 5 minutes, each a long prompt to copy with its rough time shown), Sources, Privacy and security, and CLI reference. Overview and Connect lead with one setup prompt to copy into an agent. The words avoid dashes, colons in prose and stock AI phrases. It may later move to `applebridge.johansardar.com`.
 
 ### Look
 

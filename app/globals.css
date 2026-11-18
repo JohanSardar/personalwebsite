@@ -2599,3 +2599,17 @@ ol {
   font-size: 14px;
   line-height: 1.6;
 }
+
+/* ---------- Docs: how long a prompt takes ---------- */
+
+.ab-time,
+.ab-card span.ab-time {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.ab-card span.ab-time {
+  margin-top: 4px;
+}
