@@ -20,7 +20,7 @@ export default function Sidebar() {
         <span>Sardar</span>
       </Link>
 
-      <Image className="portrait" src="/portrait.jpg" alt="Johan Sardar" width={220} height={220} priority />
+      <Image className="portrait" src="/portrait.jpg" alt="Johan Sardar" width={736} height={736} unoptimized priority />
 
       <nav className="nav" aria-label="Pages">
         {nav.map((item, i) => (
