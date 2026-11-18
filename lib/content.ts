@@ -12,6 +12,8 @@ export type Project = {
   still: string | null;
   /** Optional version of the Still for the dark theme. */
   stillDark?: string | null;
+  /** Optional docs page on this site; the card opens it in place of the repo. */
+  docs?: string;
   /** Clip that plays on hover. Null means nothing plays. */
   video: string | null;
 };

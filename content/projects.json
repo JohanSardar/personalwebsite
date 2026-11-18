@@ -19,7 +19,8 @@
     "description": "Verification before tool use for agents.",
     "repo": "JohanSardar/bogo",
     "still": null,
-    "video": null
+    "video": null,
+    "docs": "/bogo"
   },
   {
     "name": "Hyperthymesia",

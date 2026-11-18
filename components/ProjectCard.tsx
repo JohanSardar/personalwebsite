@@ -41,9 +41,8 @@ export default function ProjectCard({ project, index }: Props) {
       ref={card}
       className="card reveal"
       style={{ "--i": index } as React.CSSProperties}
-      href={`https://github.com/${project.repo}`}
-      target="_blank"
-      rel="noreferrer"
+      href={project.docs ?? `https://github.com/${project.repo}`}
+      {...(project.docs ? {} : { target: "_blank", rel: "noreferrer" })}
       onMouseEnter={play}
       onMouseLeave={stop}
       onFocus={play}
