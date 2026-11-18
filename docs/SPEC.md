@@ -60,6 +60,10 @@ The descriptions:
 - Reflex: An iPad canvas that connects to any harness via MCP.
 - Phoenix: Record an agent run, then replay any moment of it in a sandbox.
 
+### Apple Bridge docs
+
+Added 2026-11-18 at Johan's request. `/apple-bridge` holds the Apple Bridge docs, laid out like ui-sdk.dev/docs in this site's look. A docs sidebar replaces the site sidebar, and wide screens show an "On this page" list. The first page leads with one prompt to copy into an agent, with tabs per agent. Pages are Overview, Setup, Sources, Tools, Other computers, Privacy and access, and Troubleshooting. The words avoid dashes, colons in prose and stock AI phrases. It may later move to `applebridge.johansardar.com`.
+
 ### Look
 
 - Light by default, with a toggle for dark.

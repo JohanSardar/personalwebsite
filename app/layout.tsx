@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Archivo } from "next/font/google";
-import Sidebar from "@/components/Sidebar";
 import "./globals.css";
 
 const archivo = Archivo({
@@ -29,10 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <span />
           <span />
         </div>
-        <div className="shell">
-          <Sidebar />
-          <main className="main">{children}</main>
-        </div>
+        {children}
       </body>
     </html>
   );

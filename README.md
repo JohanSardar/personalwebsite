@@ -1,6 +1,6 @@
 # johansardar.com
 
-Johan Sardar's personal site. Two pages: Home and Projects.
+Johan Sardar's personal site. Two pages, Home and Projects, plus the Apple Bridge docs at `/apple-bridge`.
 
 - What it is and why: [docs/SPEC.md](docs/SPEC.md)
 - The words it uses: [GLOSSARY.md](GLOSSARY.md)
