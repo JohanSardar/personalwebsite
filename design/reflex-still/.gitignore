@@ -1,2 +1,5 @@
 .deps/
 __pycache__/
+.chrome-replica/
+claude-reference.png
+claude-structure-comparison.png
