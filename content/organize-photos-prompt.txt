@@ -2,24 +2,27 @@ Go through my whole Photos library with Apple Bridge and organize it into albums
 
 How to work:
 
-1. Get the lay of the land first. List my existing albums, then use photos.places and searches by year and month to see where and when I take photos. Look for clusters: a burst of photos somewhere away from home is probably a trip, the same place over and over is probably home, work or school.
-2. Look at the photos themselves to understand them. Use contact sheets of about 20 photos per sample, spread across each cluster, rather than every single photo. Open a photo larger only when you can't tell what it is.
-3. Before you create anything, show me a plan: each album you want to make, its name, roughly how many photos, and a sentence on how you decided what goes in it. Wait for my ok.
-4. Then build it. Create each album, add photos in batches, and read the album back to check the count.
+1. Get the lay of the land first. List my existing albums and smart albums, then use photos.places and searches by year and month to see where and when I take photos. Look for clusters: a burst of photos somewhere away from home is probably a trip, the same place over and over is probably home, work or school.
+2. Use what Apple already knows. If a photo comes with a type or a tag, such as screenshot, selfie, video, Live Photo, favorite, a smart album or a place name, trust that instead of guessing.
+3. Then look at the photos themselves. Place and date only tell you which photos to look at, not what they are. Go through every photo you plan to put in an album on contact sheets of about 20 at a time, and open a photo larger when you can't tell what it is. Don't judge a cluster from a sample.
+4. Sort by what each photo means, not where it was taken. Photos from the same place and week can be different things: class notes, a night out with friends, food, a game. Split them into the albums they belong in, and leave out the ones that only happen to share the place or date.
+5. Before you create anything, show me a plan: each album you want to make, its name, roughly how many photos, what the photos in it actually show, and whether you looked at all of them. Wait for my ok.
+6. Then build it. Create each album, add photos in batches, and read the album back to check the count.
 
 What good albums look like:
 
-- Trips named by place and date, like "Lisbon, May 2025". Split separate visits to the same place.
+- Trips named by place and date, like "Lisbon, May 2025". Split separate visits to the same place. Only the photos of the trip go in, not everything taken on those days.
 - Events like weddings, birthdays, graduations and holidays, named by what and when.
 - People I clearly photograph a lot, named by how they show up, like "Mom" if it's obvious from context or "Friend with red hair" if not. Ask me to name them instead of guessing.
 - Ongoing themes that show up across years, like pets, food, sports, concerts, nature, cars or projects, but only if there are enough photos to be worth an album.
-- Practical stuff like screenshots, receipts, documents, whiteboards and memes, so they're out of the way.
+- Practical stuff like screenshots, receipts, documents, class notes, whiteboards and memes, so they're out of the way.
 - Only go as fine-grained as the library deserves. Ten good albums beat a hundred thin ones.
 
 Rules:
 
 - Never delete, hide or edit a photo. Only create albums and add photos to them.
 - Don't touch my existing albums or rename them. If one already covers something, tell me instead of making a duplicate.
+- Never add a photo to an album you haven't looked at. An album name is a promise about what's in it, so "Campus" means photos of campus, not every photo taken near it.
 - A photo can be in more than one album.
 - If you're unsure where something goes, leave it out and list it at the end.
 - Keep what you see private. Don't describe people's faces or private documents back to me in detail.

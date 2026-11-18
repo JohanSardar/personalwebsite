@@ -27,8 +27,8 @@ export default function OrganizePhotos() {
 
       <h2 id="the-prompt">The prompt</h2>
       <p>
-        Copy this into your agent. It looks through your library first, shows you a plan, and only creates albums after
-        you say ok. It never deletes, hides or edits a photo.
+        Copy this into your agent. It looks at every photo before sorting it, shows you a plan, and only creates albums
+        after you say ok. It never deletes, hides or edits a photo.
       </p>
       <LongPrompt text={prompt} />
 
