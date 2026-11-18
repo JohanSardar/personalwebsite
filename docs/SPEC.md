@@ -57,7 +57,7 @@ The descriptions:
 - Apple Bridge: Your Mac's Messages, Mail, Calendar and Notes for coding agents.
 - Hyperthymesia: An exact replica of every day, built from what your devices observe.
 - BOGO: Verification before tool use for agents.
-- Reflex: Send marks, words and your screen from an iPad to your coding agent.
+- Reflex: An iPad canvas that connects to any harness via MCP.
 - Phoenix: Record an agent run, then replay any moment of it in a sandbox.
 
 ### Look

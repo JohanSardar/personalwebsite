@@ -9,7 +9,7 @@
   },
   {
     "name": "Reflex",
-    "description": "Send marks, words and your screen from an iPad to your coding agent.",
+    "description": "An iPad canvas that connects to any harness via MCP.",
     "repo": "JohanSardar/reflex",
     "still": "/projects/reflex-still.jpg",
     "video": "/projects/reflex.mp4"
