@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Cards, Head } from "@/components/apple-bridge/Bits";
 import CopyPrompt from "@/components/apple-bridge/CopyPrompt";
 import PageNav from "@/components/apple-bridge/PageNav";
-import UseCases from "@/components/apple-bridge/UseCases";
 import { docPage } from "@/lib/apple-bridge-docs";
 
 export const metadata: Metadata = { title: { absolute: "Apple Bridge docs" } };
@@ -27,9 +27,12 @@ export default function Overview() {
       </p>
       <CopyPrompt />
 
-      <h2 id="what-you-can-do">What you can do with Apple Bridge</h2>
-      <p>Talk to your agent the way you normally would. These are a few things people ask every day.</p>
-      <UseCases />
+      <h2 id="prompts">Prompts to try</h2>
+      <p>
+        Once you are connected, paste one of these into your agent. Each one is a whole job it does with Apple Bridge.{" "}
+        <Link href="/apple-bridge/prompts">See all prompts</Link>.
+      </p>
+      <Cards items={docPage("/apple-bridge/prompts").children!} />
 
       <h2 id="next-steps">Next steps</h2>
       <Cards
