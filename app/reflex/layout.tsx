@@ -4,6 +4,7 @@ import DocsSidebar from "@/components/docs/DocsSidebar";
 export const metadata: Metadata = {
   title: { default: "Reflex Docs", template: "%s · Reflex Docs" },
   description: "Send what you draw, write and say on your iPad to Claude Code or Codex on your Mac.",
+  icons: { icon: "/reflex/logo.svg", apple: "/reflex/logo.svg" },
 };
 
 export default function DocsLayout({ children }: { children: React.ReactNode }) {

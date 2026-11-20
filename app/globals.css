@@ -110,6 +110,21 @@ ol {
   padding: 40px 28px 32px;
 }
 
+.docs-mark {
+  display: block;
+  grid-row: span 2;
+  align-self: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+}
+
+.docs-sidebar .wordmark {
+  grid-template-columns: auto 1fr;
+  column-gap: 14px;
+}
+
 .wordmark {
   display: grid;
   font-weight: 600;
@@ -1594,6 +1609,18 @@ ol {
 
   .docs-sidebar .wordmark {
     grid-column: 1;
+    align-items: center;
+  }
+
+  .docs-sidebar .wordmark {
+    column-gap: 0.5em;
+  }
+
+  .docs-sidebar .docs-mark {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+    border-radius: 6px;
   }
 
   .docs-sidebar .toggle {

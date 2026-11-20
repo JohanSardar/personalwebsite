@@ -13,6 +13,7 @@ export default function DocsSidebar() {
     <aside className="sidebar docs-sidebar">
       <BackLink repo={REPO} />
       <Link href="/reflex" className="wordmark" aria-label="Reflex docs, start">
+        <img src="/reflex/logo.svg" alt="" className="docs-mark" width={44} height={44} />
         <span>Reflex</span>
         <span>Docs</span>
       </Link>
